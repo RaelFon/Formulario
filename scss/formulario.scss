@@ -1,0 +1,149 @@
+@import 'constants';
+
+html{
+    
+    font-family:Times, 'Times New Roman', serif;
+
+    body{
+
+        .instructions{
+
+            border: solid 5px;
+            border-style: double;
+            height: 80px;
+            width: 900px;
+
+                P{
+                    margin-top: 5px;
+                    font-size: 17px;
+                    font-weight: bolder;
+                    text-align: center;
+
+                }
+
+                li{
+                    text-align: left;
+                }
+            }
+        }   
+    }
+
+        .communicated{
+            h2{
+                margin-top: 20px;
+            }
+        }
+
+        .communicated{
+            p {
+                margin-top: 40px;
+                font-size: 22px;
+                font-weight: bolder;
+            }
+        }
+
+        .texts{
+            margin-top: 20px;
+            width: 900px;
+                p{
+                    margin-top: 5px;
+                    text-align: left;
+                }
+        }
+
+    h1 {
+        height: 30px;
+        width: 245px;
+        margin-top: 30px;
+        font-size: 25px;
+        
+    }
+
+    .formulary-items {  
+        margin-top: 30px;
+        width: 900px;
+        border: solid #000 1px;     
+        
+        
+        .formulary-items-line1{
+        display: grid;
+        grid-template-columns: 3fr 1.3fr;
+        align-items: center;
+
+        .name{
+            width: 582px;
+            border: 0px;
+        }
+        .crf{
+            width: 191px;
+            border: 0px;
+        }
+        }
+
+        .formulary-items-line2{
+        display: grid;
+        grid-template-columns: 3fr 1fr 2fr;
+        align-items: center;
+        .address{
+            width: 383px;
+            border: 0px;
+        }
+        .number{
+            width: 127px;
+            border: 0px;
+        }
+        .complement{
+            width: 249px;
+            border: 0px;
+        }
+        }
+
+        .formulary-items-line3{
+        display: grid;
+        grid-template-columns: 2fr 1.9fr 1.3fr;
+        .area{
+            width:  298px;
+            border: 0px;
+        }
+        .city{
+            width: 277px;
+            border: 0px;
+        }
+        .state{
+            width: 175px;
+            border: 0px;
+        }    
+        }
+
+        .formulary-items-line4{
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        .cep{
+            width: 144px;
+            border: 0px;
+        }
+        .phone{
+            width: 321px;
+            border: 0px;
+        }
+        .cel{
+            width: 331px;
+            border: 0px;
+        }    
+        }
+        
+        .formulary-items-line5{
+            display: grid;
+            .email{
+                width: 850px;
+                border: 0px;
+            }
+        }
+    } 
+    
+    label{
+        border: solid #000 1px;
+        height: 20px;
+        
+    }
+
