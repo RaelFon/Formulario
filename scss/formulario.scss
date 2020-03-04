@@ -5,19 +5,21 @@ html{
     font-family:Times, 'Times New Roman', serif;
 
     body{
-
+            width: 900px;
+        header{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            align-items: center;
+            gap: 164px;
         h1 {
             height: 30px;
-            width: 245px;
+            width: 290px;
             margin-top: 40px;
             font-size: 25px;
         }
 
         .box {
-            position: relative;
-            right: 185px;
-            bottom: 30px;
-            float: right;
+            margin-top: 6px;
             height: 60px;
             width: 140px;
             border: solid #000 1px;
@@ -34,9 +36,10 @@ html{
                 font-size: 17px;
             }
         }
+        }
+        
 
         .instructions{
-            margin-top: 30px;
             border: solid 5px;
             border-style: double;
             height: 80px;
@@ -71,8 +74,7 @@ html{
         }
 
         .texts{
-            margin-top: 20px;
-            width: 900px;
+            margin-top: 20px;           
                 p{
                     margin-top: 5px;
                     text-align: left;
@@ -80,7 +82,7 @@ html{
         }
 
     
-    }
+    
 
     label{
         border: solid #000 1px;
@@ -122,7 +124,7 @@ html{
             border: 0px;
         }
         .complement{
-            width: 249px;
+            width: 250px;
             border: 0px;
         }
         }
@@ -213,13 +215,21 @@ html{
 
         .formulary-items-II-line4{
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: 2.5fr 1fr;
+
+            .fi-II-line4-borders-I{
+            border-right: 0px;
+            }
+            .fi-II-line4-borders-II{
+            border-left: 0px;
+            }    
+            
             .line4-item-I{
-                width: 139px;
+                width: 143px;
                 border: 0px;
             }
             .line4-item-II{
-                width: 245px;
+                width: 244px;
                 border: 0px;
             }
         }
@@ -236,14 +246,15 @@ html{
                 border:solid #000 1px;
                 }
             }   
-        
-            .a{
-                
             }
-
-        }
-        
+        .a{
+            
+            margin-top: 5px;
+            text-align: left;
+        }    
     }
+        
+}
     
   
 

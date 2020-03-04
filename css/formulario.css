@@ -6,34 +6,39 @@
 html {
   font-family: Times, "Times New Roman", serif;
 }
-html body h1 {
+html body {
+  width: 900px;
+}
+html body header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  gap: 164px;
+}
+html body header h1 {
   height: 30px;
-  width: 245px;
+  width: 290px;
   margin-top: 40px;
   font-size: 25px;
 }
-html body .box {
-  position: relative;
-  right: 185px;
-  bottom: 30px;
-  float: right;
+html body header .box {
+  margin-top: 6px;
   height: 60px;
   width: 140px;
   border: solid #000 1px;
 }
-html body .box .box-item {
+html body header .box .box-item {
   padding: 0px 10px;
   margin-top: 10px;
   text-align: left;
   font-size: 17px;
 }
-html body .box .box-item-II {
+html body header .box .box-item-II {
   padding: 0px 10px;
   text-align: left;
   font-size: 17px;
 }
 html body .instructions {
-  margin-top: 30px;
   border: solid 5px;
   border-style: double;
   height: 80px;
@@ -58,147 +63,156 @@ html body .communicated p {
 }
 html body .texts {
   margin-top: 20px;
-  width: 900px;
 }
 html body .texts p {
   margin-top: 5px;
   text-align: left;
 }
-html label {
+html body label {
   border: solid #000 1px;
   height: 20px;
 }
-html .formulary {
+html body .formulary {
   margin-top: 30px;
   width: 900px;
   border: solid #000 1px;
 }
-html .formulary .formulary-items-line1 {
+html body .formulary .formulary-items-line1 {
   display: grid;
   grid-template-columns: 3fr 1.3fr;
   align-items: center;
 }
-html .formulary .formulary-items-line1 .name {
+html body .formulary .formulary-items-line1 .name {
   width: 582px;
   border: 0px;
 }
-html .formulary .formulary-items-line1 .crf {
+html body .formulary .formulary-items-line1 .crf {
   width: 191px;
   border: 0px;
 }
-html .formulary .formulary-items-line2 {
+html body .formulary .formulary-items-line2 {
   display: grid;
   grid-template-columns: 3fr 1fr 2fr;
   align-items: center;
 }
-html .formulary .formulary-items-line2 .address {
+html body .formulary .formulary-items-line2 .address {
   width: 383px;
   border: 0px;
 }
-html .formulary .formulary-items-line2 .number {
+html body .formulary .formulary-items-line2 .number {
   width: 127px;
   border: 0px;
 }
-html .formulary .formulary-items-line2 .complement {
-  width: 249px;
+html body .formulary .formulary-items-line2 .complement {
+  width: 250px;
   border: 0px;
 }
-html .formulary .formulary-items-line3 {
+html body .formulary .formulary-items-line3 {
   display: grid;
   grid-template-columns: 2fr 1.9fr 1.3fr;
 }
-html .formulary .formulary-items-line3 .area {
+html body .formulary .formulary-items-line3 .area {
   width: 298px;
   border: 0px;
 }
-html .formulary .formulary-items-line3 .city {
+html body .formulary .formulary-items-line3 .city {
   width: 277px;
   border: 0px;
 }
-html .formulary .formulary-items-line3 .state {
+html body .formulary .formulary-items-line3 .state {
   width: 175px;
   border: 0px;
 }
-html .formulary .formulary-items-line4 {
+html body .formulary .formulary-items-line4 {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
 }
-html .formulary .formulary-items-line4 .cep {
+html body .formulary .formulary-items-line4 .cep {
   width: 144px;
   border: 0px;
 }
-html .formulary .formulary-items-line4 .phone {
+html body .formulary .formulary-items-line4 .phone {
   width: 321px;
   border: 0px;
 }
-html .formulary .formulary-items-line4 .cel {
+html body .formulary .formulary-items-line4 .cel {
   width: 331px;
   border: 0px;
 }
-html .formulary .formulary-items-line5 {
+html body .formulary .formulary-items-line5 {
   display: grid;
 }
-html .formulary .formulary-items-line5 .email {
+html body .formulary .formulary-items-line5 .email {
   width: 850px;
   border: 0px;
 }
-html .declaration {
+html body .declaration {
   margin-top: 40px;
 }
-html .formulary .formulary-items-II-line1 {
+html body .formulary .formulary-items-II-line1 {
   display: grid;
   grid-template-columns: 3fr 1.3fr;
   align-items: center;
 }
-html .formulary .formulary-items-II-line1 .eu {
+html body .formulary .formulary-items-II-line1 .eu {
   width: 603px;
   border: 0px;
 }
-html .formulary .formulary-items-II-line1 .crf {
+html body .formulary .formulary-items-II-line1 .crf {
   width: 191px;
   border: 0px;
 }
-html .formulary .formulary-items-II-line2 {
+html body .formulary .formulary-items-II-line2 {
   display: grid;
 }
-html .formulary .formulary-items-II-line2 .pharm {
+html body .formulary .formulary-items-II-line2 .pharm {
   width: 399px;
   border: 0px;
 }
-html .formulary .formulary-items-II-line3 {
+html body .formulary .formulary-items-II-line3 {
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
-html .formulary .formulary-items-II-line3 .social {
+html body .formulary .formulary-items-II-line3 .social {
   width: 584px;
   border: 0px;
 }
-html .formulary .formulary-items-II-line3 .crfpj {
+html body .formulary .formulary-items-II-line3 .crfpj {
   width: 147px;
   border: 0px;
 }
-html .formulary .formulary-items-II-line4 {
+html body .formulary .formulary-items-II-line4 {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 2.5fr 1fr;
 }
-html .formulary .formulary-items-II-line4 .line4-item-I {
-  width: 139px;
+html body .formulary .formulary-items-II-line4 .fi-II-line4-borders-I {
+  border-right: 0px;
+}
+html body .formulary .formulary-items-II-line4 .fi-II-line4-borders-II {
+  border-left: 0px;
+}
+html body .formulary .formulary-items-II-line4 .line4-item-I {
+  width: 143px;
   border: 0px;
 }
-html .formulary .formulary-items-II-line4 .line4-item-II {
-  width: 245px;
+html body .formulary .formulary-items-II-line4 .line4-item-II {
+  width: 244px;
   border: 0px;
 }
-html .formulary .formulary-items-II-line5 {
+html body .formulary .formulary-items-II-line5 {
   display: grid;
 }
-html .formulary .formulary-items-II-line5 .line5-item-I {
+html body .formulary .formulary-items-II-line5 .line5-item-I {
   width: 829px;
   border: 0px;
 }
-html .formulary .formulary-items-II-line5 .line5-item-II {
+html body .formulary .formulary-items-II-line5 .line5-item-II {
   width: 898px;
   border: solid #000 1px;
+}
+html body .a {
+  margin-top: 5px;
+  text-align: left;
 }
 
 /*# sourceMappingURL=formulario.css.map */
