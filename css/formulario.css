@@ -8,6 +8,7 @@ html {
 }
 html body {
   width: 900px;
+  height: 100%;
 }
 html body header {
   display: grid;
@@ -42,7 +43,7 @@ html body .instructions {
   border: solid 5px;
   border-style: double;
   height: 80px;
-  width: 900px;
+  width: 890px;
 }
 html body .instructions P {
   margin-top: 5px;
@@ -210,9 +211,74 @@ html body .formulary .formulary-items-II-line5 .line5-item-II {
   width: 898px;
   border: solid #000 1px;
 }
-html body .a {
-  margin-top: 5px;
+html body .subscrevo-me {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 40px;
   text-align: left;
+}
+html body .subscrevo-me p {
+  width: 270px;
+  margin: 0px;
+}
+html body .subscrevo-me #label-sub {
+  height: 20px;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+html body .subscrevo-me #ipt-sub {
+  visibility: hidden;
+  width: 100px;
+}
+html body .subscrevo-me #ipt-sub2 {
+  visibility: hidden;
+  width: 50px;
+}
+html body .subscrevo-me #ipt-sub3 {
+  visibility: hidden;
+  width: 50px;
+}
+html body .subscrevo-me #ipt-sub4 {
+  visibility: hidden;
+  width: 50px;
+}
+html body #ul-sub {
+  float: right;
+  display: grid;
+  grid-template-columns: 210px 160px 100px 170px;
+  list-style-type: none;
+  font-size: 12px;
+}
+html body .signatures {
+  margin-top: 100px;
+  width: 500px;
+  height: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+html body .signatures .pro-signature {
+  border-top: solid 3px #000;
+  width: 200px;
+  height: 80px;
+  float: left;
+}
+html body .signatures p {
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+html body .signatures #p-II {
+  border-top: solid 3px #000;
+}
+html body .docs {
+  width: 250px;
+  height: 110px;
+  border: solid 1px #000;
+}
+html body .docs .p2-II {
+  border-top: solid 3px #000;
+  width: 250px;
+  position: absolute;
 }
 
 /*# sourceMappingURL=formulario.css.map */

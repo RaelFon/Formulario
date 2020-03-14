@@ -6,6 +6,7 @@ html{
 
     body{
             width: 900px;
+            height: 100%;
         header{
             display: grid;
             grid-template-columns: 1fr 2fr 1fr;
@@ -43,7 +44,7 @@ html{
             border: solid 5px;
             border-style: double;
             height: 80px;
-            width: 900px;
+            width: 890px;
 
                 P{
                     margin-top: 5px;
@@ -247,11 +248,87 @@ html{
                 }
             }   
             }
-        .a{
-            
-            margin-top: 5px;
+        .subscrevo-me{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            margin-top: 40px;
             text-align: left;
+
+            p{
+                width: 270px;
+                margin: 0px;
+            }
+            
+            #label-sub{
+                height: 20px;
+                margin-left: 40px;
+                margin-top: 40px;
+            }
+
+            #ipt-sub{
+                visibility: hidden;
+                width: 100px;
+            }
+            #ipt-sub2{
+                visibility: hidden;
+                width: 50px;
+            }
+            #ipt-sub3{
+                visibility: hidden;
+                width: 50px;
+            }
+            #ipt-sub4{
+                visibility: hidden;
+                width: 50px;
+            }
+            
+        }
+        #ul-sub{
+            float: right;
+            display: grid;
+            grid-template-columns: 210px 160px 100px 170px;
+            list-style-type: none;
+            font-size: 12px;
+        }
+
+        .signatures{
+            margin-top: 100px;
+            width: 500px;
+            height: 0px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            
+            
+
+        .pro-signature{
+            border-top: solid 3px #000;
+            width: 200px;
+            height: 80px;
+            float: left; 
+        }
+        p{
+            margin-top: 5px;
+            margin-bottom: 50px;
+        }
+        #p-II{
+            border-top: solid 3px #000;
         }    
+    }
+
+    .docs{
+        width: 250px;
+        height: 110px;
+        border: solid 1px #000;
+        
+        .p2-II{
+            border-top: solid 3px #000;
+            width: 250px;
+            position: absolute;
+            
+        }
+    }
+        
     }
         
 }
