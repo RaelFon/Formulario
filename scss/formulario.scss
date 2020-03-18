@@ -3,7 +3,8 @@
 * {
     margin: 0;
     border: none;
-    font-family:Times, 'Times New Roman', serif;
+    font-family:'Times New Roman', serif;
+    font-size: 12px;
 }
 
 html{
@@ -15,64 +16,75 @@ html{
 
         header{
             display: grid;
-            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-columns:1fr 1.4fr 0fr;
             align-items: center;
-            gap: 164px;
+            gap: 0px;
+            justify-content: center;
+            height: 50px;
         h1 {
-            height: 30px;
             width: 290px;
-            margin-top: 40px;
-            font-size: 25px;
+            font-size: 19px;
         }
 
         .box {
             margin-top: 6px;
-            height: 60px;
-            width: 140px;
+            height: 40px;
+            width: 130px;
             border: solid #000 1px;
 
             .box-item{
-                padding: 0px 10px;
-                margin-top:10px;
+                padding-left:10px;
                 text-align: left;
-                font-size: 17px;
+                font-size: 12px;
+                margin-top: 5px;
             }
             .box-item-II{
-                padding: 0px 10px;
+                padding-left:10px;
                 text-align: left;
-                font-size: 17px;
+                font-size: 12px;
             }
         }
         }
         
-        .instructions{
-            border: solid 5px;
-            border-style: double;
-            height: 80px;
-            width: 890px;
+        .instructions-out {
+            border: solid 2px;
+            border-top: solid 1px;
 
-            P{
-                margin-top: 5px;
-                font-size: 17px;
-                font-weight: bolder;
-            }
+            .instructions-in {
+                border: solid 1px;
+                border-top: solid 2px;
+                margin: 1px;
+                padding: 4px;
 
-            li{
-                text-align: left;
+                P{
+                    margin-top: 5px;
+                    font-size: 13px;
+                    font-weight: bolder;
+                    text-align: center;
+                }
+
+                li{
+                    font-size: 11px;
+                    text-align: left;
+                    padding-left: 25px;
+                }
             }
         }
 
-        .communicated{
-            h2{
+        .communicated {
+
+            h2 {
                 text-align: center;
-                margin-top: 20px;
+                font-size: 17px;
+                margin-top: 16px;
             }
         }
 
         .communicated{
             p {
-                margin-top: 40px;
-                font-size: 22px;
+                margin-top: 20px;
+                font-size: 16px;
+                text-align: center;
                 font-weight: bolder;
             }
         }
@@ -80,17 +92,21 @@ html{
         .texts{
             margin-top: 20px;           
                 p{
-                    margin-top: 5px;
                     text-align: left;
                 }
         }
 
-        .formulary2 {
+        .formulary {
             border: 1px solid $black;
+            margin-top: 20px;
 
             div {
                 border-top: 1px solid $black;
                 display: grid;
+
+                label {
+                    padding-left: 2px;
+                }
 
                 input {
                     border-right: 1px solid $black;
@@ -102,7 +118,7 @@ html{
 
                 &:nth-child(1) {
                     border-top: none;
-                    grid-template-columns: 52px 1fr 88px 200px;
+                    grid-template-columns: 45px 1fr 75px 23%;
                 }
 
                 &:nth-child(2) {
@@ -110,213 +126,97 @@ html{
                 }
 
                 &:nth-child(3) {
-                    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+                    grid-template-columns: 45px 1fr 50px 30% 47px 20%;
                 }
 
                 &:nth-child(4) {
-                    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+                    grid-template-columns: 35px 20% 36px 33% 30px 33%;
                 }
 
                 &:nth-child(5) {
-                    grid-template-columns: 100px 100px;
-                }
-            }
-        }
-
-        .formulary {  
-            margin-top: 30px;
-            width: 900px;
-            border-bottom: solid $black 1px;
-            border-left: solid $black 1px;
-
-            label{
-                border-top: solid $black 1px;
-                border-right: 1px solid $black;
-                padding-left: 3px;
-                height: 20px;
-            }
-            
-            .formulary-items-line1 {
-                display: grid;
-                grid-template-columns: 3fr 1.3fr;
-                align-items: center;
-
-                .name{
-                    width: 582px;
-                    border: 0px;
-                }
-
-                .crf{
-                    width: 191px;
-                    border: 0px;
-                }
-            }
-
-            .formulary-items-line2 {
-                display: grid;
-                grid-template-columns: 3fr 1fr 2fr;
-                align-items: center;
-
-                .address {
-                    width: 383px;
-                    border: 0px;
-                }
-
-                .number {
-                    width: 127px;
-                    border: 0px;
-                }
-                
-                .complement {
-                    width: 250px;
-                    border: 0px;
-                }
-            }
-
-            .formulary-items-line3 {
-                display: grid;
-                grid-template-columns: 2fr 1.9fr 1.3fr;
-
-                .area{
-                    width:  298px;
-                    border: 0px;
-                }
-
-                .city{
-                    width: 277px;
-                    border: 0px;
-                }
-
-                .state{
-                    width: 175px;
-                    border: 0px;
-                }    
-            }
-
-            .formulary-items-line4{
-                display: grid;
-                grid-template-columns: 1fr 2fr 2fr;
-
-                .cep{
-                    width: 144px;
-                    border: 0px;
-                }
-
-                .phone{
-                    width: 321px;
-                    border: 0px;
-                }
-
-                .cel{
-                    width: 331px;
-                    border: 0px;
-                }    
-            }
-            
-            .formulary-items-line5{
-                display: grid;
-
-                .email{
-                    width: 840px;
-                    border: 0px;
+                    grid-template-columns: 50px 90%;
                 }
             }
         }
 
         .declaration{
-            margin-top: 40px;
+            margin-top: 35px;
+            text-align: center;
+
+            h2{
+                font-size: 17px;
+            }
         }
-        
-        .formulary {
-            .formulary-items-II-line1 {
-                display: grid;
-                grid-template-columns: 3fr 1.3fr;
-                align-items: center;
 
-                .eu{
-                    width: 603px;
-                    border: 0px;
-                }
+        .formulary2 {
+            border: 1px solid $black;
+            margin-top: 20px;
 
-                .crf{
-                    width: 191px;
-                    border: 0px;
+            label{
+                padding-left: 2px;
+            }
+
+            input{
+                border-right: 1px solid $black;
+
+                &.last{
+                    border-right: none;
                 }
             }
             
-            .formulary-items-II-line2{
+            div {
+                border-top: 1px solid $black;
                 display: grid;
 
-                .pharm {
-                    width: 399px;
-                    border: 0px;
+                &:nth-child(1) {
+                    border-top: none;
+                    grid-template-columns: 20px 1fr 62px 23%;
+                }
+
+                &:nth-child(2) {
+                    grid-template-columns: 381px 47%;
+                }
+
+                &:nth-child(3) {
+                    grid-template-columns: 70px 1fr 60px 17%;
+                }
+
+                &:nth-child(4) {
+                    grid-template-columns: 52px 1fr 18px 13% 39px 28%;
+                }
+
+                &:nth-child(5) {
+                    grid-template-columns: 41px 34% 83px 33% 41px 10%;
+                }
+
+                &:nth-child(6) {
+                    grid-template-columns: 381px 19% 13px 26%;
+                    
+                    .child-6-item-I{
+                        border-right: none;
+                    }
+                }
+
+                &:nth-child(7) {
+                    grid-template-columns: 60px 1fr;
                 }
             }
-
-            .formulary-items-II-line3{
-                display: grid;
-                grid-template-columns: 3fr 1fr;
-                
-                .social{
-                        width :584px;
-                        border: 0px;
-                }
-                .crfpj{
-                    width: 147px;
-                    border: 0px;
-                }
-            
-            }
-
-            .formulary-items-II-line4{
-                display: grid;
-                grid-template-columns: 2.5fr 1fr;
-
-                .fi-II-line4-borders-I{
-                border-right: 0px;
-                }
-                .fi-II-line4-borders-II{
-                border-left: 0px;
-                }    
-                
-                .line4-item-I{
-                    width: 143px;
-                    border: 0px;
-                }
-                .line4-item-II{
-                    width: 244px;
-                    border: 0px;
-                }
-            }
-
-            .formulary-items-II-line5 {
-                display: grid;
-                grid-template-columns: 1fr;
-                
-                .line5-item-I, .line5-item-II{     
-                    width: 820px;
-                    border: 0px;
-                }
-
-                .line5-item-II {
-                    width: 100%;
-                }
-            }   
         }
 
         .subscrevo-me {
             display: grid;
             grid-template-columns: 1fr 2fr;
-            margin-top: 40px;
+            margin-top: 20px;
             text-align: left;
 
             p{
-                width: 270px;
+                width: 240px;
                 margin: 0px;
             }
             
             #label-sub{
-                height: 20px;
+                border: solid 1px $black;
+                height: 16px;
                 margin-left: 40px;
                 margin-top: 40px;
             }
@@ -327,11 +227,11 @@ html{
             }
             #ipt-sub2{
                 visibility: hidden;
-                width: 50px;
+                width: 70px;
             }
             #ipt-sub3{
                 visibility: hidden;
-                width: 50px;
+                width: 30px;
             }
             #ipt-sub4{
                 visibility: hidden;
@@ -342,15 +242,13 @@ html{
         #ul-sub{
             float: right;
             display: grid;
-            grid-template-columns: 210px 160px 100px 170px;
+            grid-template-columns: 173px 100px 75px 90px;;
             list-style-type: none;
             font-size: 12px;
         }
 
         .signatures{
             margin-top: 100px;
-            width: 500px;
-            height: 0px;
             display: grid;
             grid-template-columns: 1fr 1fr;
             align-items: center;
@@ -358,28 +256,29 @@ html{
             
 
         .pro-signature{
-            border-top: solid 3px #000;
-            width: 200px;
+            border-top: solid 2px #000;
+            width: 175px;
+            margin-left: 150px;
             height: 80px;
-            float: left; 
         }
         p{
+            text-align: center;
             margin-top: 5px;
             margin-bottom: 50px;
         }
         #p-II{
-            border-top: solid 3px #000;
+            border-top: solid 2px #000;
         }    
         }
 
         .docs{
-            width: 250px;
-            height: 110px;
+            width: 220px;
+            height: 95px;
             border: solid 1px #000;
             
             .p2-II{
-                border-top: solid 3px #000;
-                width: 250px;
+                border-top: solid 2px #000;
+                width: 220px;
                 position: absolute;
                 
             }

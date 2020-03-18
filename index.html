@@ -18,36 +18,36 @@
                 <p class="box-item-II">Func.</p>
             </div>
         </header>
-    
-        <div class="instructions">
-            <p>SEGUIR INSTRUÇÕES</p>
-            <ul>
-                <li> Mauris pellentesque aliquam est, ac tincidunt diam ullamcorper in. Aenean nec sollicitudin augue.</li>
-                <li>Phasellus scelerisque ligula id risus aliquet tempor. Nulla diam leo, posuere et elit eu, dapibus cursus
-                    libero.</li>
-            </ul>
+        
+        <div class="instructions-out">
+            <div class="instructions-in">
+                <p>SEGUIR INSTRUÇÕES</p>
+                <ul>
+                    <li> Todos os campos devem ser preenchidos (preencher em letra de forma ou legível)</li>
+                    <li>Não serão aceitos formulários fora do padrão ou desconfigurados, com rasuras, digitados e complementados à caneta.</li>
+                </ul>
+            </div>
         </div>
     
         <div class="communicated">
             <h2>COMUNICADO DE AUSÊNCIA</h2>
-            <p>Mauris pellentesque aliquam est, ac tincidunt diam ullamcorper in. Aenean nec .</p>
+            <p>Ilmo. Presidente do Conselho Regional de Farmácia do Estado de São Paulo - CRF-SP</p>
         </div>
     
         <div class="texts">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Donec efficitur, enim ut tincidunt euismod, nulla sapien consectetur orci, at sollicitudin risus orci id
-                purus.</p>
-            <p>Pellentesque nulla turpis, tristique quis mollis vel, fringilla maximus lorem.</p>
+            <p>Declaro sob as penas de lei que os dados abaixo são verdadeiros.</p>
+            <p>Decalro ainda, estar em pleno gozo da minha capacidade civil, bem como ter bons antecedentes e gozar de boa reputação por minha</p>
+            <p>conduta pública (Lei nº 6868, 03/12/1980).</p>
         </div>
 
-        <div class="formulary2">
-            <div class="line1">
+        <div class="formulary">
+            <div>
                 <label>Nome:</label>
                 <input class="name" type="text" />
                 <label>Nº CRF-PF:</label>
                 <input class="crf last" type="text" />
             </div>
-            <div class="line2">
+            <div>
                 <label>Endereço:</label>
                 <input class="address" type="text" />
                 <label>Nº:</label>
@@ -55,7 +55,7 @@
                 <label>Compl:</label>
                 <input class="complement last" type="text" />
             </div>
-            <div class="line3">
+            <div>
                 <label>Bairro:</label>
                 <input class="area" type="text" />
                 <label>Cidade:</label>
@@ -63,7 +63,7 @@
                 <label>Estado:</label>
                 <input class="state last" type="text" />
             </div>
-            <div class="line4">
+            <div>
                 <label>CEP:</label>
                 <input class="cep" type="text" />
                 <label>Fone:</label>
@@ -71,34 +71,9 @@
                 <label>Cel:</label>
                 <input class="cel last" type="text" />
             </div>
-            <div class="line5">
+            <div>
                 <label>E-mail:</label>
                 <input class="email last" type="text" />
-            </div>
-        </div>
-    
-        <div class="formulary">
-            <div class="formulary-items-line1">
-                <label>Nome:<input class="name" type="text" /></label>
-                <label>Nº CRF-PF:<input class="crf" type="text" /></label>
-            </div>
-            <div class="formulary-items-line2">
-                <label>Endereço:<input class="address" type="text" /></label>
-                <label>Nº:<input class="number" type="text" /></label>
-                <label>Compl:<input class="complement" type="text" /></label>
-            </div>
-            <div class="formulary-items-line3">
-                <label>Bairro:<input class="area" type="text" /></label>
-                <label>Cidade:<input class="city" type="text" /></label>
-                <label>Estado:<input class="state" type="text" /></label>
-            </div>
-            <div class="formulary-items-line4">
-                <label>CEP:<input class="cep" type="text" /></label>
-                <label>Fone:<input class="phone" type="text" /></label>
-                <label>Cel:<input class="cel" type="text" /></label>
-            </div>
-            <div class="formulary-items-line5">
-                <label>E-mail:<input class="email" type="text" /></label>
             </div>
         </div>
     
@@ -106,56 +81,65 @@
             <h2>DECLARAÇÃO</h2>
         </div>
     
-        <div class="formulary">
-            <div class="formulary-items-II-line1">
-                <label>Eu:<input class="eu" type="text" /></label>
-                <label>Nº CRF-PF:<input class="crf" type="text" /></label>
+        <div class="formulary2">
+            <div>
+                <label>Eu,</label>
+                <input class="eu" type="text" />
+                <label>Nº CRF-PF:</label>
+                <input class="crf last" type="text" />
             </div>
-            <div class="formulary-items-II-line2">
-                <label>Farmacêutico (a) Responsável / Farmacêutico (a) Substituto (a) pela empresa:<input class="pharm"
-                        type="text"></label>
+            <div>
+                <label>Farmacêutico (a) Responsável / Farmacêutico (a) Substituto (a) pela empresa:</label>
+                <input class="pharm" type="text">
             </div>
-            <div class="formulary-items-II-line3">
-                <label>Razão Social:<input class="social" type="text" /></label>
-                <label>Nº CRF-PJ:<input class="crfpj" type="text" /></label>
+            <div>
+                <label>Razão Social:</label>
+                <input class="social" type="text" />
+                <label>Nº CRF-PJ:</label>
+                <input class=" crfpj last" type="text">
             </div>
-            <div class="formulary-items-line2">
-                <!-- PARA EDITAR ESTA DIV NO SCSS USE ".formulary-items-line2"  -->
-                <label>Endereço:<input class="address" type="text" /></label>
-                <label>Nº:<input class="number" type="text" /></label>
-                <label>Compl:<input class="complement" type="text" /></label>
+            <div>
+                <label>Endereço:</label>
+                <input class="address" type="text" />
+                <label>Nº:</label>
+                <input class="number" type="text" />
+                <label>Compl:</label>
+                <input class="complement last" type="text" />
             </div>
     
-            <div class="formulary-items-line3">
-                <!-- PARA EDITAR ESTA DIV NO SCSS USE ".formulary-items-line3"  -->
-                <label>Bairro:<input class="area" type="text" /></label>
-                <label>Cidade:<input class="city" type="text" /></label>
-                <label>Estado:<input class="state" type="text" /></label>
+            <div>
+                <label>Bairro:</label>
+                <input class="area" type="text" />
+                <label>Cidade:</label>
+                <input class="city" type="text" />
+                <label>Estado:</label>
+                <input class="state last" type="text" />
             </div>
-            <div class="formulary-items-II-line4">
-                <label class="fi-II-line4-borders-I">Venho por meio desta, declarar a V. Sa. que ficarei afastado (a) no
-                    período de: <input class="line4-item-I" type="text" /></label>
-                <label class="fi-II-line4-borders-II">
-                    a:<input class="line4-item-II" type="text" />
-                </label>
+            <div>
+                <label>Venho por meio desta, declarar a V. Sa. que ficarei afastado (a) no período de: </label>
+                <input class="child-6-item-I" type="text" />
+                <label class="child-6-label"> a: </label>
+                <input class="child-6 last" type="text" />
             </div>
-            <div class="formulary-items-II-line5">
-                <label>MOTIVO: <input class="line5-item-I" type="text" />
-                </label>
+            <div>
+                <label>MOTIVO: </label>
+                <input class="empty-line last" type="text" />
             </div>
-            <div class="formulary-items-II-line5">
-                <label><input class="line5-item-II" type="text" /></label>
+            <div>
+                <label></label>
+                <input class="empty-line last" type="text" />
             </div>
-            <div class="formulary-items-II-line5">
-                <label><input class="line5-item-II" type="text" /></label>
+            <div>
+                <label></label>
+                <input class="empty-line last" type="text" />
             </div>
         </div>
     
         <div class="subscrevo-me">
             <p>Sem mais para o momento, subscrevo-me</p>
-            <label id="label-sub">SÃO PAULO<input id="ipt-sub" type="text" />, 00
-                <input id="ipt-sub2" type="text">de DEZEMBRO
-                <input id="ipt-sub3" type="text">de 0000
+            <label id="label-sub">SÃO PAULO<input id="ipt-sub" type="text" />, 18
+                <input id="ipt-sub2" type="text">de março
+                <input id="ipt-sub3" type="text">de 2020
                 <input id="ipt-sub4" type="text">
             </label>
         </div>
