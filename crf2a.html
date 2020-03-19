@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
-    <link rel="stylesheet" type="text/css" href="./css/formulario.css">
+    <link rel="stylesheet" type="text/css" href="./css/crf2a.css">
 </head>
 
 <body>
@@ -40,7 +40,7 @@
             <p>conduta pública (Lei nº 6868, 03/12/1980).</p>
         </div>
 
-        <div class="formulary">
+        <div class="formulary company">
             <div>
                 <label>Nome:</label>
                 <input class="name" type="text" />
@@ -77,11 +77,9 @@
             </div>
         </div>
     
-        <div class="declaration">
-            <h2>DECLARAÇÃO</h2>
-        </div>
+        <h2 class="declaration">DECLARAÇÃO</h2>
     
-        <div class="formulary2">
+        <div class="formulary declaration">
             <div>
                 <label>Eu,</label>
                 <input class="eu" type="text" />
@@ -106,7 +104,6 @@
                 <label>Compl:</label>
                 <input class="complement last" type="text" />
             </div>
-    
             <div>
                 <label>Bairro:</label>
                 <input class="area" type="text" />
@@ -134,32 +131,27 @@
                 <input class="empty-line last" type="text" />
             </div>
         </div>
-    
-        <div class="subscrevo-me">
-            <p>Sem mais para o momento, subscrevo-me</p>
-            <label id="label-sub">SÃO PAULO<input id="ipt-sub" type="text" />, 18
-                <input id="ipt-sub2" type="text">de março
-                <input id="ipt-sub3" type="text">de 2020
-                <input id="ipt-sub4" type="text">
-            </label>
+        <p class="subscrevome">Sem mais para o momento, subscrevo-me</p>
+        <div class="subscrevome">
+            <input type="text" value="São Paulo" /> <span>,</span>
+            <input type="text" /> <span>de</span>
+            <input type="text" /> <span>de</span>
+            <input type="text" />
         </div>
-        <ul id="ul-sub">
-            <li>Cidade</li>
-            <li>Dia</li>
-            <li>Mês</li>
-            <li>Ano</li>
-        </ul>
-    
+        <div class="sub">
+            <span>Cidade</span>
+            <span>Dia</span>
+            <span>Mês</span>
+            <span>Ano</span>
+        </div>
         <div class="signatures">
             <div class="pro-signature">
                 <p>Assinatura do profissional</p>
-    
-                <p id="p-II">Carimbo e / ou nome legível</p><br>
+                <p>Carimbo e / ou nome legível</p>
             </div>
             <div class="docs">
-                <p>Documentos conferidos por:
-                </p>
-                <p class="p2-II">Assinatura do funcionário</p>
+                <p>Documentos conferidos por:</p>
+                <p>Assinatura do funcionário</p>
             </div>
         </div>
     </div>
