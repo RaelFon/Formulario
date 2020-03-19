@@ -12,12 +12,13 @@
 
 header {
   display: grid;
-  grid-template-columns: 1fr 1.4fr 0fr; }
+  grid-template-columns: 5fr 1fr; }
   header h1 {
-    width: 290px;
+    padding-left: 20%;
     font-size: 19px;
-    align-self: end; }
-  header .box {
+    align-self: end;
+    text-align: center; }
+  header div {
     width: 100px;
     border: solid #000 1px;
     padding: 9px 10px; }
@@ -67,26 +68,26 @@ header {
         border-right: none; }
   .formulary.company div:nth-child(1) {
     border-top: none;
-    grid-template-columns: 45px 1fr 75px 23%; }
+    grid-template-columns: 37px 1fr 63px 23%; }
   .formulary.company div:nth-child(2) {
-    grid-template-columns: 70px 1fr 25px 10% 50px 30%; }
+    grid-template-columns: 54px 1fr 20px 10% 40px 30%; }
   .formulary.company div:nth-child(3) {
-    grid-template-columns: 45px 1fr 50px 30% 47px 20%; }
+    grid-template-columns: 40px 1fr 43px 30% 40px 20%; }
   .formulary.company div:nth-child(4) {
-    grid-template-columns: 35px 20% 36px 33% 30px 33%; }
+    grid-template-columns: 30px 20% 33px 33% 25px 1fr; }
   .formulary.company div:nth-child(5) {
-    grid-template-columns: 50px 90%; }
+    grid-template-columns: 40px 1fr; }
   .formulary.declaration div:nth-child(1) {
     border-top: none;
     grid-template-columns: 20px 1fr 62px 23%; }
   .formulary.declaration div:nth-child(2) {
-    grid-template-columns: 381px 47%; }
+    grid-template-columns: 380px 47%; }
   .formulary.declaration div:nth-child(3) {
     grid-template-columns: 70px 1fr 60px 17%; }
   .formulary.declaration div:nth-child(4) {
     grid-template-columns: 52px 1fr 18px 13% 39px 28%; }
   .formulary.declaration div:nth-child(5) {
-    grid-template-columns: 41px 34% 83px 33% 41px 10%; }
+    grid-template-columns: 41px 34% 45px 1fr 41px 10%; }
   .formulary.declaration div:nth-child(6) {
     grid-template-columns: 381px 19% 13px 26%; }
     .formulary.declaration div:nth-child(6) .child-6-item-I {
@@ -146,5 +147,3 @@ div.subscrevome {
       border-top: solid 2px #000;
       width: 220px;
       margin-top: 70px; }
-
-/*# sourceMappingURL=crf2a.css.map */
