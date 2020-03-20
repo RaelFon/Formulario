@@ -1,149 +1,121 @@
 @import "constants", "crf";
 
-h2 {
-  text-align: center;
-  font-size: 15px;
-  margin-top: 20px;
-}
-
-h3 {
-  font-size: 12pt;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.crf {
-  border: solid 1px $black;
-  border-bottom: none;
-  width: 30%;
-  margin-left: 501px;
-  margin-top: 25px;
-
-  span{
-      padding-left: 2px;
+.container {
+  h2 {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
   }
-  input {
-    width: 70%;
-  }
-}
 
-.costumer {
-  border: solid 1px $black;
-  border-right: none;
-  div {
+  h3 {
+    font-size: 12pt;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .crf {
+    display: grid;
+    grid-template-columns: 61px 1fr;
+    border: solid 1px $black;
+    border-bottom: none;
+    width: 30%;
+    margin-left: 501px;
+    margin-top: 25px;
+
     span {
       padding-left: 2px;
     }
-    input {
-      border-right: solid 1px $black;
-    }
-    border-bottom: solid 1px $black;
-    display: grid;
-    align-items: center;
-
-    &:nth-child(1) {
-      grid-template-columns: 70px 1fr;
-    }
-
-    &:nth-child(2) {
-      grid-template-columns: 81px 45% 34px 39%;
-    }
-
-    &:nth-child(3) {
-      grid-template-columns: 101px 86%;
-    }
-
-    &:nth-child(4) {
-      grid-template-columns: 58px 92%;
-    }
-
-    &:nth-child(5) {
-      grid-template-columns: 45% 19px 11% 39px 36%;
-    }
-
-    &:nth-child(6) {
-      grid-template-columns: 36px 36% 40px 35% 39px 13%;
-    }
-
-    &:nth-child(7) {
-      grid-template-columns: 26px 10% 31px 15% 24px 15% 41px 43%;
-      border: none;
-    }
   }
-}
 
-h4 {
-  font-size: 12pt;
-  margin-top: 40px;
-}
-
-.check {
-  margin-top: 20px;
-
-  div {
-    width: 40px;
-    padding: 2px 0;
+  .costumer {
     border: solid 1px $black;
-    margin-top: 5px;
-    text-align: center;
-    cursor: pointer;
-    display: inline-block;
-    
-  }
-}
+    border-right: none;
 
-p.date {
-  margin-top: 200px;
-  margin-left: 286px;
-}
+    div {
+      border-bottom: solid 1px $black;
+      display: grid;
+      align-items: center;
 
-.signatures-crf4 {
-    margin-top: 140px;
-    margin-bottom: 100px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 100px;
-  
-    * {
-      font-size: 10pt;
-    }
-  
-    p {
-      text-align: center;
-      margin-top: 5px;
-  
-      &:nth-child(2) {
-        border-top: solid 2px $black;
+      span {
+        padding-left: 2px;
       }
-    }
-}
+      
+      input {
+        border-right: solid 1px $black;
+      }
 
-.pro-signature-crf4 {
-    width: 255px;
-    margin-left: 50px;
-
-    p {
       &:nth-child(1) {
-        border-top: solid 2px $black;
-        margin-top: 20px;
+        grid-template-columns: 70px 1fr;
       }
 
       &:nth-child(2) {
-        margin-top: 50px;
+        grid-template-columns: 81px 1fr 34px 39%;
+      }
+
+      &:nth-child(3) {
+        grid-template-columns: 101px 1fr;
+      }
+
+      &:nth-child(4) {
+        grid-template-columns: 58px 1fr;
+      }
+
+      &:nth-child(5) {
+        grid-template-columns: 45% 19px 11% 39px 1fr;
+      }
+
+      &:nth-child(6) {
+        grid-template-columns: 36px 1fr 40px 35% 39px 13%;
+      }
+
+      &:nth-child(7) {
+        grid-template-columns: 26px 10% 31px 15% 24px 15% 41px 1fr;
+        border: none;
       }
     }
   }
 
-  .docs-crf4 {
-    width: 270px;
-    border: solid 1px $black;
+  h4 {
+    font-size: 12pt;
+    margin-top: 40px;
+  }
 
-    p {
-      &:nth-child(2) {
-        border-top: solid 2px $black;
-        width: 270px;
-        margin-top: 70px;
+  .check {
+    margin-top: 20px;
+
+    div {
+      width: 40px;
+      padding: 2px 0;
+      border: solid 1px $black;
+      margin-top: 5px;
+      text-align: center;
+      cursor: pointer;
+      display: inline-block;
+    }
+  }
+
+  p.date {
+    margin-top: 200px;
+    margin-left: 286px;
+  }
+
+  .signatures {
+    margin-bottom: 100px;
+    gap: 100px;
+
+    .pro-signature {
+      width: 255px;
+      margin-left: 50px;
+    }
+
+    .docs {
+      width: 270px;
+
+      p {
+        &:nth-child(2) {
+          width: 270px;
+        }
       }
     }
+  }
 }

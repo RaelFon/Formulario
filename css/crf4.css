@@ -41,8 +41,7 @@ div.date {
   margin-top: 25px;
   float: right; }
   div.date input {
-    text-transform: uppercase; }
-  div.date :nth-child(1) {
+    text-transform: uppercase;
     padding-left: 2px; }
 
 .sub {
@@ -80,61 +79,61 @@ div.date {
       width: 220px;
       margin-top: 70px; }
 
-h2 {
+.container h2 {
   text-align: center;
   font-size: 15px;
   margin-top: 20px; }
 
-h3 {
+.container h3 {
   font-size: 12pt;
   text-align: center;
   margin-top: 20px; }
 
-.crf {
+.container .crf {
+  display: grid;
+  grid-template-columns: 61px 1fr;
   border: solid 1px #000;
   border-bottom: none;
   width: 30%;
   margin-left: 501px;
   margin-top: 25px; }
-  .crf span {
+  .container .crf span {
     padding-left: 2px; }
-  .crf input {
-    width: 70%; }
 
-.costumer {
+.container .costumer {
   border: solid 1px #000;
   border-right: none; }
-  .costumer div {
+  .container .costumer div {
     border-bottom: solid 1px #000;
     display: grid;
     align-items: center; }
-    .costumer div span {
+    .container .costumer div span {
       padding-left: 2px; }
-    .costumer div input {
+    .container .costumer div input {
       border-right: solid 1px #000; }
-    .costumer div:nth-child(1) {
+    .container .costumer div:nth-child(1) {
       grid-template-columns: 70px 1fr; }
-    .costumer div:nth-child(2) {
-      grid-template-columns: 81px 45% 34px 39%; }
-    .costumer div:nth-child(3) {
-      grid-template-columns: 101px 86%; }
-    .costumer div:nth-child(4) {
-      grid-template-columns: 58px 92%; }
-    .costumer div:nth-child(5) {
-      grid-template-columns: 45% 19px 11% 39px 36%; }
-    .costumer div:nth-child(6) {
-      grid-template-columns: 36px 36% 40px 35% 39px 13%; }
-    .costumer div:nth-child(7) {
-      grid-template-columns: 26px 10% 31px 15% 24px 15% 41px 43%;
+    .container .costumer div:nth-child(2) {
+      grid-template-columns: 81px 1fr 34px 39%; }
+    .container .costumer div:nth-child(3) {
+      grid-template-columns: 101px 1fr; }
+    .container .costumer div:nth-child(4) {
+      grid-template-columns: 58px 1fr; }
+    .container .costumer div:nth-child(5) {
+      grid-template-columns: 45% 19px 11% 39px 1fr; }
+    .container .costumer div:nth-child(6) {
+      grid-template-columns: 36px 1fr 40px 35% 39px 13%; }
+    .container .costumer div:nth-child(7) {
+      grid-template-columns: 26px 10% 31px 15% 24px 15% 41px 1fr;
       border: none; }
 
-h4 {
+.container h4 {
   font-size: 12pt;
   margin-top: 40px; }
 
-.check {
+.container .check {
   margin-top: 20px; }
-  .check div {
+  .container .check div {
     width: 40px;
     padding: 2px 0;
     border: solid 1px #000;
@@ -143,38 +142,17 @@ h4 {
     cursor: pointer;
     display: inline-block; }
 
-p.date {
+.container p.date {
   margin-top: 200px;
   margin-left: 286px; }
 
-.signatures-crf4 {
-  margin-top: 140px;
+.container .signatures {
   margin-bottom: 100px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
   gap: 100px; }
-  .signatures-crf4 * {
-    font-size: 10pt; }
-  .signatures-crf4 p {
-    text-align: center;
-    margin-top: 5px; }
-    .signatures-crf4 p:nth-child(2) {
-      border-top: solid 2px #000; }
-
-.pro-signature-crf4 {
-  width: 255px;
-  margin-left: 50px; }
-  .pro-signature-crf4 p:nth-child(1) {
-    border-top: solid 2px #000;
-    margin-top: 20px; }
-  .pro-signature-crf4 p:nth-child(2) {
-    margin-top: 50px; }
-
-.docs-crf4 {
-  width: 270px;
-  border: solid 1px #000; }
-  .docs-crf4 p:nth-child(2) {
-    border-top: solid 2px #000;
-    width: 270px;
-    margin-top: 70px; }
+  .container .signatures .pro-signature {
+    width: 255px;
+    margin-left: 50px; }
+  .container .signatures .docs {
+    width: 270px; }
+    .container .signatures .docs p:nth-child(2) {
+      width: 270px; }
