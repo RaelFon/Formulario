@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  border: none;
+  font-family: "Times New Roman", serif;
+  font-size: 12px;
+  color: #333; }
+
+.container {
+  margin: 0 auto;
+  width: 190mm;
+  padding-bottom: 10px; }
+
+header h1 {
+  font-size: 19px;
+  align-self: end;
+  text-align: center;
+  margin-top: 15px; }
+
+.instructions-out {
+  border: solid 2px #000;
+  border-top: solid 1px #000; }
+  .instructions-out .instructions-in {
+    border: solid 1px #000;
+    border-top: solid 2px #000;
+    margin: 1px;
+    padding: 4px; }
+    .instructions-out .instructions-in p {
+      margin-top: 5px;
+      font-size: 13px;
+      font-weight: bolder;
+      text-align: center; }
+    .instructions-out .instructions-in li {
+      font-size: 11px;
+      padding-left: 25px; }
+
+div.date {
+  display: grid;
+  grid-template-columns: 166px 5px 40px 2em 100px 2em 70px;
+  border: solid 1px #000;
+  margin-left: 40px;
+  margin-top: 25px;
+  float: right; }
+  div.date input {
+    text-transform: uppercase; }
+  div.date :nth-child(1) {
+    padding-left: 2px; }
+
+.sub {
+  float: right;
+  display: grid;
+  grid-template-columns: 177px 85px 75px 90px;
+  list-style-type: none;
+  font-size: 8pt; }
+
+.signatures {
+  margin-top: 140px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center; }
+  .signatures * {
+    font-size: 10pt; }
+  .signatures p {
+    text-align: center;
+    margin-top: 5px; }
+    .signatures p:nth-child(2) {
+      border-top: solid 2px #000; }
+  .signatures .pro-signature {
+    width: 175px;
+    margin-left: 150px; }
+    .signatures .pro-signature p:nth-child(1) {
+      border-top: solid 2px #000;
+      margin-top: 20px; }
+    .signatures .pro-signature p:nth-child(2) {
+      margin-top: 50px; }
+  .signatures .docs {
+    width: 220px;
+    border: solid 1px #000; }
+    .signatures .docs p:nth-child(2) {
+      border-top: solid 2px #000;
+      width: 220px;
+      margin-top: 70px; }
+
+h2 {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 20px; }
+
+h3 {
+  font-size: 12pt;
+  text-align: center;
+  margin-top: 20px; }
+
+.crf {
+  border: solid 1px #000;
+  border-bottom: none;
+  width: 30%;
+  margin-left: 501px;
+  margin-top: 25px; }
+  .crf span {
+    padding-left: 2px; }
+  .crf input {
+    width: 70%; }
+
+.costumer {
+  border: solid 1px #000;
+  border-right: none; }
+  .costumer div {
+    border-bottom: solid 1px #000;
+    display: grid;
+    align-items: center; }
+    .costumer div span {
+      padding-left: 2px; }
+    .costumer div input {
+      border-right: solid 1px #000; }
+    .costumer div:nth-child(1) {
+      grid-template-columns: 70px 1fr; }
+    .costumer div:nth-child(2) {
+      grid-template-columns: 81px 45% 34px 39%; }
+    .costumer div:nth-child(3) {
+      grid-template-columns: 101px 86%; }
+    .costumer div:nth-child(4) {
+      grid-template-columns: 58px 92%; }
+    .costumer div:nth-child(5) {
+      grid-template-columns: 45% 19px 11% 39px 36%; }
+    .costumer div:nth-child(6) {
+      grid-template-columns: 36px 36% 40px 35% 39px 13%; }
+    .costumer div:nth-child(7) {
+      grid-template-columns: 26px 10% 31px 15% 24px 15% 41px 43%;
+      border: none; }
+
+h4 {
+  font-size: 12pt;
+  margin-top: 40px; }
+
+.check {
+  margin-top: 20px; }
+  .check div {
+    width: 40px;
+    padding: 2px 0;
+    border: solid 1px #000;
+    margin-top: 5px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block; }
+
+p.date {
+  margin-top: 200px;
+  margin-left: 286px; }
+
+.signatures-crf4 {
+  margin-top: 140px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 100px; }
+  .signatures-crf4 * {
+    font-size: 10pt; }
+  .signatures-crf4 p {
+    text-align: center;
+    margin-top: 5px; }
+    .signatures-crf4 p:nth-child(2) {
+      border-top: solid 2px #000; }
+
+.pro-signature-crf4 {
+  width: 255px;
+  margin-left: 50px; }
+  .pro-signature-crf4 p:nth-child(1) {
+    border-top: solid 2px #000;
+    margin-top: 20px; }
+  .pro-signature-crf4 p:nth-child(2) {
+    margin-top: 50px; }
+
+.docs-crf4 {
+  width: 270px;
+  border: solid 1px #000; }
+  .docs-crf4 p:nth-child(2) {
+    border-top: solid 2px #000;
+    width: 270px;
+    margin-top: 70px; }
