@@ -11,3 +11,13 @@
   width: 190mm;
   padding-bottom: 10px;
 }
+
+.custom-check {
+  border: solid 1px #000;
+  height: 17px;
+  width: 25px;
+  padding-top: 3px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+}
