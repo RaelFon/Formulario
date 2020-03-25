@@ -134,71 +134,96 @@ div.date {
       width: 220px;
       margin-top: 70px; }
 
-.container h2 {
-  text-align: center;
-  font-size: 15px;
-  margin-top: 20px; }
-
-.container h3 {
-  font-size: 12pt;
-  text-align: center;
-  margin-top: 20px; }
-
-.container .crf {
+header {
+  margin-top: 25px;
   display: grid;
-  grid-template-columns: 61px 1fr;
-  border: solid 1px #000;
-  border-bottom: none;
-  width: 30%;
-  padding: 1px 0;
-  margin-left: 501px;
-  margin-top: 25px; }
-  .container .crf input {
-    width: 99%; }
-  .container .crf span {
-    padding-left: 2px;
-    margin: 1px; }
+  grid-template-columns: 5fr 1fr; }
+  header h1 {
+    padding-left: 20%; }
+  header div {
+    width: 100px;
+    border: solid #000 1px;
+    padding: 9px 10px; }
 
-.container .costumer div {
-  display: grid;
-  align-items: center; }
-  .container .costumer div span {
-    padding-left: 2px; }
-  .container .costumer div:nth-child(1) {
-    grid-template-columns: 70px 1fr; }
-  .container .costumer div:nth-child(2) {
-    grid-template-columns: 81px 1fr 34px 39%; }
-  .container .costumer div:nth-child(3) {
-    grid-template-columns: 101px 1fr; }
-  .container .costumer div:nth-child(4) {
-    grid-template-columns: 58px 1fr; }
-  .container .costumer div:nth-child(5) {
-    grid-template-columns: 45% 19px 11% 39px 1fr;
-    border-left: solid 1px #000; }
-  .container .costumer div:nth-child(6) {
-    grid-template-columns: 36px 1fr 40px 35% 39px 13%; }
-  .container .costumer div:nth-child(7) {
-    grid-template-columns: 26px 10% 31px 15% 24px 15% 41px 1fr; }
+.sub-header {
+  margin-top: 10px; }
+  .sub-header h2 {
+    text-align: center;
+    font-size: 12pt;
+    margin-top: 5px; }
+  .sub-header p {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bolder; }
 
-.container h4 {
-  font-size: 12pt;
-  margin-top: 40px; }
+.professional-data {
+  margin-top: 20px; }
+  .professional-data p {
+    line-height: 15px;
+    font-size: 10pt; }
+  .professional-data strong {
+    font-size: 10pt; }
+  .professional-data .custom-form {
+    margin-bottom: 20px; }
+    .professional-data .custom-form div {
+      display: grid;
+      align-items: center; }
+      .professional-data .custom-form div:nth-child(1) {
+        grid-template-columns: 38px 1fr 65px 25%; }
+      .professional-data .custom-form div:nth-child(2) {
+        grid-template-columns: 54px 1fr 22px 10% 42px 30%; }
+      .professional-data .custom-form div:nth-child(3) {
+        grid-template-columns: 40px 32% 44px 1fr 41px 5% 28px 10%; }
+      .professional-data .custom-form div:nth-child(4) {
+        grid-template-columns: 33px 20% 26px 20% 42px 1fr; }
 
-.container .custom-check {
+.last-work-day {
+  margin-bottom: 20px; }
+  .last-work-day p {
+    margin-top: 10px; }
+    .last-work-day p strong {
+      font-size: 14pt; }
+    .last-work-day p input {
+      width: 20px;
+      font-size: 12pt;
+      text-align: center;
+      border-bottom: solid 1px #000; }
+      .last-work-day p input:nth-child(4) {
+        width: 40px; }
+
+.company {
+  margin-top: 5px; }
+  .company div {
+    display: grid;
+    align-items: center; }
+    .company div:nth-child(1) {
+      grid-template-columns: 72px 1fr 63px 15%; }
+    .company div:nth-child(2) {
+      grid-template-columns: 81px 1fr 102px 30%; }
+    .company div:nth-child(3) {
+      grid-template-columns: 54px 1fr 21px 10% 41px 30%; }
+    .company div:nth-child(4) {
+      grid-template-columns: 38px 1fr 43px 35% 42px 13%; }
+    .company div:nth-child(5) {
+      grid-template-columns: 28px 10% 33px 26% 42px 1fr; }
+
+p.date {
   margin-top: 20px;
-  width: 40px; }
-
-.container p.date {
-  margin-top: 200px;
   margin-left: 286px; }
 
-.container .signatures {
+.signatures {
   margin-bottom: 100px;
-  gap: 100px; }
-  .container .signatures .pro-signature {
-    width: 255px;
-    margin-left: 50px; }
-  .container .signatures .docs {
-    width: 270px; }
-    .container .signatures .docs p:nth-child(2) {
-      width: 270px; }
+  gap: 20px; }
+  .signatures .pro-signature {
+    width: 300px;
+    margin-left: 155px; }
+    .signatures .pro-signature p:nth-child(1) {
+      margin-top: 23px; }
+    .signatures .pro-signature p:nth-child(2) {
+      margin-top: 50px; }
+  .signatures .docs {
+    width: 240px; }
+    .signatures .docs p:nth-child(2) {
+      width: 240px;
+      margin-top: 60px; }

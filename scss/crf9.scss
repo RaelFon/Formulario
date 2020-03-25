@@ -1,0 +1,127 @@
+@import "constants", "crf", "crf-professional-number";
+
+.professional-data {
+  margin-top: 20px;
+
+  p {
+    line-height: 15px;
+    font-size: 10pt;
+  }
+
+  strong {
+    font-size: 10pt;
+  }
+
+  .custom-form {
+    margin-bottom: 20px;
+
+    div {
+      display: grid;
+      align-items: center;
+
+      &:nth-child(1) {
+        grid-template-columns: 38px 1fr 65px 25%;
+      }
+
+      &:nth-child(2) {
+        grid-template-columns: 54px 1fr 22px 10% 42px 30%;
+      }
+
+      &:nth-child(3) {
+        grid-template-columns: 40px 32% 44px 1fr 41px 5% 28px 10%;
+      }
+
+      &:nth-child(4) {
+        grid-template-columns: 33px 20% 26px 20% 42px 1fr;
+      }
+    }
+  }
+}
+
+.last-work-day {
+  margin-bottom: 20px;
+
+  p {
+    margin-top: 10px;
+
+    strong {
+      font-size: 14pt;
+    }
+    
+    input {
+      width: 20px;
+      font-size: 12pt;
+      text-align: center;
+      border-bottom: solid 1px $black;
+
+      &:nth-child(4) {
+        width: 40px;
+      }
+    }
+  }
+}
+
+.company {
+  margin-top: 5px;
+
+  div {
+    display: grid;
+    align-items: center;
+
+    &:nth-child(1) {
+      grid-template-columns: 72px 1fr 63px 15%;
+    }
+
+    &:nth-child(2) {
+      grid-template-columns: 81px 1fr 102px 30%;
+    }
+
+    &:nth-child(3) {
+      grid-template-columns: 54px 1fr 21px 10% 41px 30%;
+    }
+
+    &:nth-child(4) {
+      grid-template-columns: 38px 1fr 43px 35% 42px 13%;
+    }
+
+    &:nth-child(5) {
+      grid-template-columns: 28px 10% 33px 26% 42px 1fr;
+    }
+  }
+}
+
+p.date {
+  margin-top: 20px;
+  margin-left: 286px;
+}
+
+.signatures {
+  margin-bottom: 100px;
+  gap: 20px;
+
+  .pro-signature {
+    width: 300px;
+    margin-left: 155px;
+
+    p {
+      &:nth-child(1) {
+        margin-top: 23px;
+      }
+
+      &:nth-child(2) {
+        margin-top: 50px;
+      }
+    }
+  }
+
+  .docs {
+    width: 240px;
+
+    p {
+      &:nth-child(2) {
+        width: 240px;
+        margin-top: 60px;
+      }
+    }
+  }
+}

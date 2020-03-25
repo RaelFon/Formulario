@@ -10,6 +10,58 @@
   width: 190mm;
   padding-bottom: 10px; }
 
+.custom-check {
+  border: solid 1px #000;
+  height: 17px;
+  width: 25px;
+  padding-top: 3px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block; }
+
+input {
+  text-transform: uppercase; }
+
+.custom-form input[type=text] {
+  border: none;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  padding: 0; }
+
+.custom-form > div:last-child input[type=text] {
+  border-bottom: 1px solid #000; }
+
+.custom-form label, .custom-form span {
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  padding-left: 2px; }
+
+.custom-form > div:last-child label, .custom-form div:last-child span {
+  border-bottom: 1px solid #000; }
+
+.custom-form input + label, .custom-form input + span {
+  border-left: none; }
+
+.custom-tables {
+  display: grid; }
+  .custom-tables table {
+    border-collapse: collapse;
+    text-align: center; }
+    .custom-tables table .borderless {
+      border: none;
+      text-align: start;
+      padding-right: 15px; }
+    .custom-tables table td {
+      border: 1px solid #000;
+      border-collapse: collapse;
+      max-width: 65px;
+      overflow: hidden; }
+      .custom-tables table td input {
+        width: 100%;
+        text-align: center;
+        font-size: 8pt;
+        padding: 3px 0; }
+
 header h1 {
   font-size: 19px;
   align-self: end;
@@ -28,27 +80,29 @@ header h1 {
       margin-top: 5px;
       font-size: 13px;
       font-weight: bolder;
-      text-align: center; }
+      text-align: center;
+      text-decoration: underline; }
     .instructions-out .instructions-in li {
       font-size: 11px;
-      padding-left: 25px; }
+      padding-left: 25px;
+      line-height: 15px; }
 
 div.date {
   display: grid;
   grid-template-columns: 166px 5px 40px 2em 100px 2em 70px;
+  align-items: center;
   border: solid 1px #000;
   margin-left: 40px;
   margin-top: 25px;
-  float: right; }
+  float: right;
+  padding: 1px; }
   div.date input {
-    text-transform: uppercase; }
-  div.date :nth-child(1) {
     padding-left: 2px; }
 
 .sub {
   float: right;
   display: grid;
-  grid-template-columns: 177px 85px 75px 90px;
+  grid-template-columns: 167px 85px 105px 70px;
   list-style-type: none;
   font-size: 8pt; }
 
@@ -81,6 +135,7 @@ div.date {
       margin-top: 70px; }
 
 header {
+  margin-top: 25px;
   display: grid;
   grid-template-columns: 5fr 1fr; }
   header h1 {
@@ -90,34 +145,28 @@ header {
     border: solid #000 1px;
     padding: 9px 10px; }
 
-.communicated h2 {
-  text-align: center;
-  font-size: 17px;
-  margin-top: 16px; }
-
-.communicated p {
-  margin-top: 20px;
-  font-size: 16px;
-  text-align: center;
-  font-weight: bolder; }
+.sub-header {
+  margin-top: 10px; }
+  .sub-header h2 {
+    text-align: center;
+    font-size: 12pt;
+    margin-top: 5px; }
+  .sub-header p {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bolder; }
 
 .texts {
   margin-top: 20px; }
 
 .form {
-  border: 1px solid #000;
   margin-top: 20px; }
   .form div {
-    border-top: 1px solid #000;
     display: grid; }
     .form div label {
       padding-left: 2px; }
-    .form div input {
-      border-right: 1px solid #000; }
-      .form div input.last {
-        border-right: none; }
   .form.company div:nth-child(1) {
-    border-top: none;
     grid-template-columns: 37px 1fr 63px 23%; }
   .form.company div:nth-child(2) {
     grid-template-columns: 54px 1fr 20px 10% 40px 30%; }
@@ -128,7 +177,6 @@ header {
   .form.company div:nth-child(5) {
     grid-template-columns: 40px 1fr; }
   .form.declaration div:nth-child(1) {
-    border-top: none;
     grid-template-columns: 20px 1fr 62px 23%; }
   .form.declaration div:nth-child(2) {
     grid-template-columns: 381px 47%; }
@@ -139,11 +187,13 @@ header {
   .form.declaration div:nth-child(5) {
     grid-template-columns: 41px 34% 45px 1fr 41px 10%; }
   .form.declaration div:nth-child(6) {
-    grid-template-columns: 381px 19% 13px 26%; }
-    .form.declaration div:nth-child(6) .child-6-item-I {
+    grid-template-columns: 1fr 19% 13px 26%; }
+    .form.declaration div:nth-child(6) input:first-of-type {
       border-right: none; }
   .form.declaration div:nth-child(7) {
     grid-template-columns: 60px 1fr; }
+  .form.declaration div:nth-child(8) input, .form.declaration div:nth-child(9) input {
+    border-left: 1px solid #000; }
 
 h2.declaration {
   margin-top: 35px;
