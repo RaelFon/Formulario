@@ -21,3 +21,34 @@
   cursor: pointer;
   display: inline-block;
 }
+
+input {
+  text-transform: uppercase;
+}
+
+.custom-form {
+  input[type=text] {
+    border: none;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    padding: 0;
+  }
+  
+  > div:last-child input[type=text] {
+    border-bottom: 1px solid #000;
+  }
+  
+  label, span {
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    padding-left: 2px;
+  }
+  
+  > div:last-child label, div:last-child span {
+    border-bottom: 1px solid #000;
+  }
+  
+  input + label, input + span {
+    border-left: none;
+  }  
+}

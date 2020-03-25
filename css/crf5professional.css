@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  border: none;
+  font-family: "Times New Roman", serif;
+  font-size: 12px;
+  color: #333; }
+
+.container {
+  margin: 0 auto;
+  width: 190mm;
+  padding-bottom: 10px; }
+
+.custom-check {
+  border: solid 1px #000;
+  height: 17px;
+  width: 25px;
+  padding-top: 3px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block; }
+
+input {
+  text-transform: uppercase; }
+
+.custom-form input[type=text] {
+  border: none;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  padding: 0; }
+
+.custom-form > div:last-child input[type=text] {
+  border-bottom: 1px solid #000; }
+
+.custom-form label, .custom-form span {
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  padding-left: 2px; }
+
+.custom-form > div:last-child label, .custom-form div:last-child span {
+  border-bottom: 1px solid #000; }
+
+.custom-form input + label, .custom-form input + span {
+  border-left: none; }
+
+header h1 {
+  font-size: 19px;
+  align-self: end;
+  text-align: center;
+  margin-top: 15px; }
+
+.instructions-out {
+  border: solid 2px #000;
+  border-top: solid 1px #000; }
+  .instructions-out .instructions-in {
+    border: solid 1px #000;
+    border-top: solid 2px #000;
+    margin: 1px;
+    padding: 4px; }
+    .instructions-out .instructions-in p {
+      margin-top: 5px;
+      font-size: 13px;
+      font-weight: bolder;
+      text-align: center;
+      text-decoration: underline; }
+    .instructions-out .instructions-in li {
+      font-size: 11px;
+      padding-left: 25px;
+      line-height: 15px; }
+
+div.date {
+  display: grid;
+  grid-template-columns: 166px 5px 40px 2em 100px 2em 70px;
+  align-items: center;
+  border: solid 1px #000;
+  margin-left: 40px;
+  margin-top: 25px;
+  float: right;
+  padding: 1px; }
+  div.date input {
+    text-transform: uppercase;
+    padding-left: 2px; }
+
+.sub {
+  float: right;
+  display: grid;
+  grid-template-columns: 167px 85px 105px 70px;
+  list-style-type: none;
+  font-size: 8pt; }
+
+.signatures {
+  margin-top: 140px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center; }
+  .signatures * {
+    font-size: 10pt; }
+  .signatures p {
+    text-align: center;
+    margin-top: 5px; }
+    .signatures p:nth-child(2) {
+      border-top: solid 2px #000; }
+  .signatures .pro-signature {
+    width: 175px;
+    margin-left: 150px; }
+    .signatures .pro-signature p:nth-child(1) {
+      border-top: solid 2px #000;
+      margin-top: 20px; }
+    .signatures .pro-signature p:nth-child(2) {
+      margin-top: 50px; }
+  .signatures .docs {
+    width: 220px;
+    border: solid 1px #000; }
+    .signatures .docs p:nth-child(2) {
+      border-top: solid 2px #000;
+      width: 220px;
+      margin-top: 70px; }
+
+header h1 {
+  font-size: 12pt; }
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 10px; }
+
+.terms {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 30px 22% 30px 1fr 30px 20% 30px 17%;
+  align-items: center; }
+  .terms span {
+    padding-left: 2px;
+    font-size: 9pt; }
+
+.establish-data {
+  margin-bottom: 10px;
+  border: solid 1px #000;
+  display: grid;
+  grid-template-columns: 72px 1fr 108px 25%;
+  align-items: center; }
+  .establish-data input {
+    text-transform: uppercase;
+    height: 50%; }
+  .establish-data label {
+    padding: 3px 0px 1px 3px; }
+    .establish-data label:nth-child(3) {
+      border-left: solid 1px #000; }
+
+.professional {
+  margin-bottom: 10px; }
+  .professional div {
+    display: grid;
+    align-items: center; }
+    .professional div span {
+      padding-left: 2px; }
+    .professional div input {
+      text-transform: uppercase; }
+    .professional div:nth-child(1) {
+      grid-template-columns: 36px 1fr 63px 25%; }
+    .professional div:nth-child(2) {
+      grid-template-columns: 52px 1fr 20px 10% 40px 30%; }
+    .professional div:nth-child(3) {
+      grid-template-columns: 38px 32% 41px 1fr 40px 5% 25px 10%; }
+    .professional div:nth-child(4) {
+      grid-template-columns: 32px 20% 23px 20% 40px 1fr;
+      border: none; }
+
+.schedule {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px; }
+  .schedule table {
+    margin-top: 10px;
+    border-collapse: collapse;
+    text-align: center; }
+    .schedule table tr input {
+      width: 40px;
+      text-align: center; }
+    .schedule table tr td {
+      border: solid 1px #000; }
+      .schedule table tr td.day {
+        border: none;
+        text-align: start; }
+
+.scale {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 25% 5% 3% 5% 5%;
+  column-gap: 3%;
+  align-items: center; }
+  .scale .custom-check {
+    width: 40px; }
+  .scale div {
+    border: solid 1px #000;
+    padding: 3px; }
+  .scale span {
+    padding: 2px; }
+
+.obs-line {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: solid 1px #000;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 30px 1fr; }
+  .obs-line input {
+    text-transform: uppercase;
+    height: 50%; }
+    .obs-line input:nth-child(3) {
+      grid-column: 1 / 3;
+      border-top: solid 1px #000;
+      padding: 3px; }
+  .obs-line label {
+    padding-left: 2px; }
+
+.declaration {
+  font-size: 11pt; }
+
+.declaration-check {
+  margin-bottom: 10px;
+  font-weight: bolder; }
+  .declaration-check .custom-check {
+    width: 40px; }
+  .declaration-check span {
+    padding-left: 3px;
+    margin-top: 10px; }
+
+.declaration-text {
+  font-size: 7pt;
+  text-align: justify;
+  line-height: 13px; }
+
+.signatures {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 20px; }
+  .signatures .pro-signature {
+    width: 200px;
+    margin-left: 0; }
+    .signatures .pro-signature:nth-child(2) {
+      margin-right: 50px; }
+    .signatures .pro-signature p {
+      font-size: 8pt; }
+      .signatures .pro-signature p:nth-child(1) {
+        border-top: solid 2px #000;
+        margin-top: 20px; }
+      .signatures .pro-signature p:nth-child(2) {
+        margin-top: 42px;
+        padding-top: 2px; }
+  .signatures .docs {
+    width: 220px;
+    border: solid 1px #000; }
+    .signatures .docs p {
+      font-size: 8pt; }
+      .signatures .docs p:nth-child(2) {
+        border-top: solid 2px #000;
+        width: 220px;
+        margin-top: 55px;
+        padding: 2px 0; }

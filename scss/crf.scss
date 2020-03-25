@@ -38,10 +38,12 @@ header {
 div.date {
   display: grid;
   grid-template-columns: 166px 5px 40px 2em 100px 2em 70px;
+  align-items: center;
   border: solid 1px $black;
   margin-left: 40px;
   margin-top: 25px;
   float: right;
+  padding: 1px;
 
   input {
     text-transform: uppercase;
@@ -52,7 +54,7 @@ div.date {
 .sub {
   float: right;
   display: grid;
-  grid-template-columns: 177px 85px 75px 90px;
+  grid-template-columns: 167px 85px 105px 70px;
   list-style-type: none;
   font-size: 8pt;
 }

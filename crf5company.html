@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="./css/crf5.css" />
+    <link rel="stylesheet" type="text/css" href="./css/crf5company.css" />
     <title>Admin</title>
 </head>
 
@@ -33,7 +33,7 @@
             <span>Assunção de Farmacêutico Substituto Eventual</span>
         </div>
         <p>Dados do <strong>ESTABELECIMENTO</strong>:</p>
-        <div class="costumer">
+        <div class="costumer custom-form">
             <div>
                 <span>Razão Social:</span>
                 <input type="text" />
@@ -103,90 +103,95 @@
             cometimento do crime de “falsidade ideológica” prevista no Art. 299 do Código Penal Brasileiro,
             declarando ainda que, o horário de funcionamento é:</p>
         <div class="shedule">
-            <div class="shedule-content">
-                <div class="shedule-content-top">
-                    <strong>ROTINA:</strong>
-                    <span>Horário de Abertura</span>
-                    <span>Horário de Fechamento</span>
-                </div>
-                <div>
-                    <span>SEGUNDA</span>
-                    <input type="text" value="08:00">
-                    <input type="text" value="18:00">
-                </div>
-                <div>
-                    <span>TERÇA</span>
-                    <input type="text" value="08:00">
-                    <input type="text" value="18:00">
-                </div>
-                <div>
-                    <span>QUARTA</span>
-                    <input type="text" value="08:00">
-                    <input type="text" value="18:00">
-                </div>
-                <div>
-                    <span>QUINTA</span>
-                    <input type="text" value="08:00">
-                    <input type="text" value="18:00">
-                </div>
-                <div>
-                    <span>SEXTA</span>
-                    <input type="text" value="08:00">
-                    <input type="text" value="17:00">
-                </div>
-                <div>
-                    <span>SÁBADO</span>
-                    <input type="text" value="12:00">
-                    <input type="text" value="-----">
-                </div>
-                <div class="shedule-content-bottom">
-                    <span>DOMINGO</span>
-                    <input type="text" value="-----">
-                    <input type="text" value="-----">
-                </div>
-            </div>
-            <div class="shedule-content">
-                <div class="shedule-content-top">
-                    <strong>PLANTÃO:</strong>
-                    <span>Horário de Abertura</span>
-                    <span>Horário de Fechamento</span>
-                </div>
-                <div>
-                    <span>SEGUNDA</span>
-                    <input type="text" value="-----">
-                    <input type="text" value="-----">
-                </div>
-                <div>
-                    <span>TERÇA</span>
-                    <input type="text" value="-----">
-                    <input type="text" value="-----">
-                </div>
-                <div>
-                    <span>QUARTA</span>
-                    <input type="text" value="-----">
-                    <input type="text" value="-----">
-                </div>
-                <div>
-                    <span>QUINTA</span>
-                    <input type="text" value="-----">
-                    <input type="text" value="-----">
-                </div>
-                <div>
-                    <span>SEXTA</span>
-                    <input type="text" value="-----">
-                    <input type="text" value="-----">
-                </div>
-                <div>
-                    <span>SÁBADO</span>
-                    <input type="text" value="-----">
-                    <input type="text" value="-----">
-                </div>
-                <div class="shedule-content-bottom">
-                    <span>DOMINGO</span>
-                    <input type="text" value="-----">
-                    <input type="text" value="-----">
-                </div>
-            </div>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="day"><strong>ROTINA:</strong></td>
+                        <td>Horário de Abertura</td>
+                        <td>Horário de Fechamento</td>
+                    </tr>
+                    <tr>
+                        <td class="day">SEGUNDA</td>
+                        <td><input type="text" value="08:00" /></td>
+                        <td><input type="text" value="18:00" /></td>
+                    </tr>
+                    <tr>
+                        <td class="day">TERÇA</td>
+                        <td><input type="text" value="08:00" /></td>
+                        <td><input type="text" value="18:00" /></td>
+                    </tr>
+                    <tr>
+                        <td class="day">QUARTA</td>
+                        <td><input type="text" value="08:00" /></td>
+                        <td><input type="text" value="18:00" /></td>
+                    </tr>
+                    <tr>
+                        <td class="day">QUINTA</td>
+                        <td><input type="text" value="08:00" /></td>
+                        <td><input type="text" value="18:00" /></td>
+                    </tr>
+                    <tr>
+                        <td class="day">SEXTA</td>
+                        <td><input type="text" value="08:00" /></td>
+                        <td><input type="text" value="17:00" /></td>
+                    </tr>
+                    <tr>
+                        <td class="day">SÁBADO</td>
+                        <td><input type="text" value="-----" /></td>
+                        <td><input type="text" value="-----" /></td>
+                    </tr>
+                    <tr>
+                        <td class="day">DOMINGO</td>
+                        <td><input type="text" value="-----" /></td>
+                        <td><input type="text" value="-----" /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="day"><strong>PLANTÃO:</strong></td>
+                        <td>Horário de Abertura</td>
+                        <td>Horário de Fechamento</td>
+                    </tr>
+                    <tr>
+                        <td class="day">SEGUNDA</td>
+                        <td><input type="text" value="-----" /></td>
+                        <td><input type="text" value="-----" /></td>
+                    </tr>
+                    <tr>
+                        <td class="day">TERÇA</td>
+                        <td><input type="text" value="-----" /></td>
+                        <td><input type="text" value="-----" /></td>
+                    </tr>
+                    <tr>
+                        <td class="day">QUARTA</td>
+                        <td><input type="text" value="-----" /></td>
+                        <td><input type="text" value="-----" /></td>
+                    </tr>
+                    <tr>
+                        <td class="day">QUINTA</td>
+                        <td><input type="text" value="-----" /></td>
+                        <td><input type="text" value="-----" /></td>
+                    </tr>
+                    <tr>
+                        <td class="day">SEXTA</td>
+                        <td><input type="text" value="-----" /></td>
+                        <td><input type="text" value="-----" /></td>
+                    </tr>
+                    <tr>
+                        <td class="day">SÁBADO</td>
+                        <td><input type="text" value="-----" /></td>
+                        <td><input type="text" value="-----" /></td>
+                    </tr>
+                    <tr>
+                        <td class="day">DOMINGO</td>
+                        <td><input type="text" value="-----" /></td>
+                        <td><input type="text" value="-----" /></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <div class="obs-line">
             <label>OBS:</label>

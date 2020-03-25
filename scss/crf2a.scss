@@ -35,30 +35,19 @@ header {
 }
 
 .form {
-  border: 1px solid $black;
   margin-top: 20px;
 
   div {
-    border-top: 1px solid $black;
     display: grid;
 
     label {
       padding-left: 2px;
-    }
-
-    input {
-      border-right: 1px solid $black;
-
-      &.last {
-        border-right: none;
-      }
     }
   }
 
   &.company {
     div {
       &:nth-child(1) {
-        border-top: none;
         grid-template-columns: 37px 1fr 63px 23%;
       }
 
@@ -83,7 +72,6 @@ header {
   &.declaration {
     div {
       &:nth-child(1) {
-        border-top: none;
         grid-template-columns: 20px 1fr 62px 23%;
       }
 
@@ -104,15 +92,21 @@ header {
       }
 
       &:nth-child(6) {
-        grid-template-columns: 381px 19% 13px 26%;
+        grid-template-columns: 1fr 19% 13px 26%;
 
-        .child-6-item-I {
+        input:first-of-type {
           border-right: none;
         }
       }
 
       &:nth-child(7) {
         grid-template-columns: 60px 1fr;
+      }
+
+      &:nth-child(8), &:nth-child(9) {
+        input {
+          border-left: 1px solid $black;
+        }
       }
     }
   }

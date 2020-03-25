@@ -83,7 +83,7 @@ div.date {
 .sub {
   float: right;
   display: grid;
-  grid-template-columns: 167px 85px 105px 70px;
+  grid-template-columns: 177px 85px 75px 90px;
   list-style-type: none;
   font-size: 8pt; }
 
@@ -116,6 +116,7 @@ div.date {
       margin-top: 70px; }
 
 header {
+  margin-top: 25px;
   display: grid;
   grid-template-columns: 5fr 1fr; }
   header h1 {
@@ -125,61 +126,84 @@ header {
     border: solid #000 1px;
     padding: 9px 10px; }
 
-.communicated h2 {
+.requirement h2 {
   text-align: center;
-  font-size: 17px;
-  margin-top: 16px; }
+  font-size: 12pt;
+  margin-top: 5px; }
 
-.communicated p {
+.requirement p {
   margin-top: 20px;
   font-size: 16px;
   text-align: center;
   font-weight: bolder; }
 
-.texts {
+.professional-data {
   margin-top: 20px; }
+  .professional-data p {
+    line-height: 15px;
+    font-size: 10pt; }
+  .professional-data strong {
+    font-size: 10pt; }
+  .professional-data .professional-data-grid {
+    margin-bottom: 20px; }
+    .professional-data .professional-data-grid div {
+      display: grid;
+      align-items: center; }
+      .professional-data .professional-data-grid div:nth-child(1) {
+        grid-template-columns: 38px 1fr 65px 25%; }
+      .professional-data .professional-data-grid div:nth-child(2) {
+        grid-template-columns: 54px 1fr 22px 10% 42px 30%; }
+      .professional-data .professional-data-grid div:nth-child(3) {
+        grid-template-columns: 40px 32% 44px 1fr 41px 5% 28px 10%; }
+      .professional-data .professional-data-grid div:nth-child(4) {
+        grid-template-columns: 33px 20% 26px 20% 42px 1fr; }
 
-.form {
-  margin-top: 20px; }
-  .form div {
-    display: grid; }
-    .form div label {
-      padding-left: 2px; }
-  .form.company div:nth-child(1) {
-    grid-template-columns: 37px 1fr 63px 23%; }
-  .form.company div:nth-child(2) {
-    grid-template-columns: 54px 1fr 20px 10% 40px 30%; }
-  .form.company div:nth-child(3) {
-    grid-template-columns: 40px 1fr 43px 30% 40px 20%; }
-  .form.company div:nth-child(4) {
-    grid-template-columns: 30px 20% 33px 33% 25px 1fr; }
-  .form.company div:nth-child(5) {
-    grid-template-columns: 40px 1fr; }
-  .form.declaration div:nth-child(1) {
-    grid-template-columns: 20px 1fr 62px 23%; }
-  .form.declaration div:nth-child(2) {
-    grid-template-columns: 381px 47%; }
-  .form.declaration div:nth-child(3) {
-    grid-template-columns: 70px 1fr 60px 17%; }
-  .form.declaration div:nth-child(4) {
-    grid-template-columns: 52px 1fr 18px 13% 39px 28%; }
-  .form.declaration div:nth-child(5) {
-    grid-template-columns: 41px 34% 45px 1fr 41px 10%; }
-  .form.declaration div:nth-child(6) {
-    grid-template-columns: 1fr 19% 13px 26%; }
-    .form.declaration div:nth-child(6) input:first-of-type {
-      border-right: none; }
-  .form.declaration div:nth-child(7) {
-    grid-template-columns: 60px 1fr; }
-  .form.declaration div:nth-child(8) input, .form.declaration div:nth-child(9) input {
-    border-left: 1px solid #000; }
+.last-work-day {
+  margin-bottom: 20px; }
+  .last-work-day p {
+    margin-top: 10px; }
+    .last-work-day p strong {
+      font-size: 14pt; }
+    .last-work-day p input {
+      width: 20px;
+      font-size: 12pt;
+      text-align: center;
+      border-bottom: solid 1px #000; }
+      .last-work-day p input:nth-child(4) {
+        width: 40px; }
 
-h2.declaration {
-  margin-top: 35px;
-  text-align: center;
-  font-size: 17px; }
+.company {
+  margin-top: 5px; }
+  .company div {
+    display: grid;
+    align-items: center; }
+    .company div:nth-child(1) {
+      grid-template-columns: 72px 1fr 63px 15%; }
+    .company div:nth-child(2) {
+      grid-template-columns: 81px 1fr 102px 30%; }
+    .company div:nth-child(3) {
+      grid-template-columns: 54px 1fr 21px 10% 41px 30%; }
+    .company div:nth-child(4) {
+      grid-template-columns: 38px 1fr 43px 35% 42px 13%; }
+    .company div:nth-child(5) {
+      grid-template-columns: 28px 10% 33px 26% 42px 1fr; }
 
 p.date {
-  width: 240px;
-  margin: 0px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-left: 286px; }
+
+.signatures {
+  margin-bottom: 100px;
+  gap: 20px; }
+  .signatures .pro-signature {
+    width: 300px;
+    margin-left: 155px; }
+    .signatures .pro-signature p:nth-child(1) {
+      margin-top: 23px; }
+    .signatures .pro-signature p:nth-child(2) {
+      margin-top: 50px; }
+  .signatures .docs {
+    width: 240px; }
+    .signatures .docs p:nth-child(2) {
+      width: 240px;
+      margin-top: 60px; }

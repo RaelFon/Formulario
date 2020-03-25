@@ -19,20 +19,23 @@
     border: solid 1px $black;
     border-bottom: none;
     width: 30%;
+    padding: 1px 0;
     margin-left: 501px;
     margin-top: 25px;
 
+    input{
+      text-transform: uppercase;
+    }
+
     span {
       padding-left: 2px;
+      margin: 1px;
     }
   }
 
   .costumer {
-    border: solid 1px $black;
-    border-right: none;
 
     div {
-      border-bottom: solid 1px $black;
       display: grid;
       align-items: center;
 
@@ -40,10 +43,6 @@
         padding-left: 2px;
       }
       
-      input {
-        border-right: solid 1px $black;
-      }
-
       &:nth-child(1) {
         grid-template-columns: 70px 1fr;
       }
@@ -62,6 +61,7 @@
 
       &:nth-child(5) {
         grid-template-columns: 45% 19px 11% 39px 1fr;
+        border-left: solid 1px $black;
       }
 
       &:nth-child(6) {
