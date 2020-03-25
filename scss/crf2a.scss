@@ -1,34 +1,4 @@
-@import "constants", "crf";
-
-header {
-  display: grid;
-  grid-template-columns: 5fr 1fr;
-
-  h1 {
-    padding-left: 20%;
-  }
-
-  div {
-    width: 100px;
-    border: solid $black 1px;
-    padding: 9px 10px;
-  }
-}
-
-.communicated {
-  h2 {
-    text-align: center;
-    font-size: 17px;
-    margin-top: 16px;
-  }
-
-  p {
-    margin-top: 20px;
-    font-size: 16px;
-    text-align: center;
-    font-weight: bolder;
-  }
-}
+@import "constants", "crf", "crf-professional-number";
 
 .texts {
   margin-top: 20px;

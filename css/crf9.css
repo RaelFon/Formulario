@@ -24,9 +24,9 @@ input {
 
 .custom-form input[type=text] {
   border: none;
-  padding: 0;
   border-top: 1px solid #000;
-  border-right: 1px solid #000; }
+  border-right: 1px solid #000;
+  padding: 0; }
 
 .custom-form > div:last-child input[type=text] {
   border-bottom: 1px solid #000; }
@@ -41,6 +41,26 @@ input {
 
 .custom-form input + label, .custom-form input + span {
   border-left: none; }
+
+.custom-tables {
+  display: grid; }
+  .custom-tables table {
+    border-collapse: collapse;
+    text-align: center; }
+    .custom-tables table .borderless {
+      border: none;
+      text-align: start;
+      padding-right: 15px; }
+    .custom-tables table td {
+      border: 1px solid #000;
+      border-collapse: collapse;
+      max-width: 65px;
+      overflow: hidden; }
+      .custom-tables table td input {
+        width: 100%;
+        text-align: center;
+        font-size: 8pt;
+        padding: 3px 0; }
 
 header h1 {
   font-size: 19px;
@@ -77,13 +97,12 @@ div.date {
   float: right;
   padding: 1px; }
   div.date input {
-    text-transform: uppercase;
     padding-left: 2px; }
 
 .sub {
   float: right;
   display: grid;
-  grid-template-columns: 177px 85px 75px 90px;
+  grid-template-columns: 167px 85px 105px 70px;
   list-style-type: none;
   font-size: 8pt; }
 
@@ -126,16 +145,17 @@ header {
     border: solid #000 1px;
     padding: 9px 10px; }
 
-.requirement h2 {
-  text-align: center;
-  font-size: 12pt;
-  margin-top: 5px; }
-
-.requirement p {
-  margin-top: 20px;
-  font-size: 16px;
-  text-align: center;
-  font-weight: bolder; }
+.sub-header {
+  margin-top: 10px; }
+  .sub-header h2 {
+    text-align: center;
+    font-size: 12pt;
+    margin-top: 5px; }
+  .sub-header p {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bolder; }
 
 .professional-data {
   margin-top: 20px; }
@@ -144,18 +164,18 @@ header {
     font-size: 10pt; }
   .professional-data strong {
     font-size: 10pt; }
-  .professional-data .professional-data-grid {
+  .professional-data .custom-form {
     margin-bottom: 20px; }
-    .professional-data .professional-data-grid div {
+    .professional-data .custom-form div {
       display: grid;
       align-items: center; }
-      .professional-data .professional-data-grid div:nth-child(1) {
+      .professional-data .custom-form div:nth-child(1) {
         grid-template-columns: 38px 1fr 65px 25%; }
-      .professional-data .professional-data-grid div:nth-child(2) {
+      .professional-data .custom-form div:nth-child(2) {
         grid-template-columns: 54px 1fr 22px 10% 42px 30%; }
-      .professional-data .professional-data-grid div:nth-child(3) {
+      .professional-data .custom-form div:nth-child(3) {
         grid-template-columns: 40px 32% 44px 1fr 41px 5% 28px 10%; }
-      .professional-data .professional-data-grid div:nth-child(4) {
+      .professional-data .custom-form div:nth-child(4) {
         grid-template-columns: 33px 20% 26px 20% 42px 1fr; }
 
 .last-work-day {

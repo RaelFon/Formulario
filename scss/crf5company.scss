@@ -5,6 +5,7 @@
     margin-top: 2px;
     text-decoration: underline;
   }
+
   li {
     margin-top: 4px;
     margin-bottom: 4px;
@@ -42,10 +43,6 @@ p {
 
     span {
       padding-left: 2px;
-    }
-
-    input {
-      text-transform: uppercase;
     }
 
     &:nth-child(1) {
@@ -100,7 +97,6 @@ p {
     p {
       margin: 3px;
       font-size: 8pt;
-      text-align: justify;
       line-height: 15px;
     }
   }
@@ -124,51 +120,16 @@ p {
 
 .shedule {
   margin-top: 10px;
-  display: grid;
   grid-template-columns: 30% 30%;
   gap: 160px;
-
-  table {
-    border-collapse: collapse;
-    text-align: center;
-
-    .day {
-      border: none;
-      text-align: start;
-      padding-right: 15px;
-    }
-
-    td {
-      border: 1px solid $black;
-      border-collapse: collapse;
-      max-width: 65px;
-      overflow: hidden;
-      
-      input{
-        width: 100%;
-        text-align: center;
-        font-size: 8pt;
-        padding: 3px 0;
-      }
-    }
-  }
 }
 
 .obs-line {
   display: grid;
-  grid-template-columns: 30px 1fr;
+  grid-template-columns: 33px 1fr;
   align-items: center;
   margin-top: 30px;
-  border: solid 1px $black;
   margin-bottom: 20px;
-
-  input {
-    height: 50%;
-    text-transform: uppercase;
-  }
-  label {
-    padding: 2px;
-  }
 }
 
 .signatures {
@@ -202,7 +163,7 @@ p {
         font-size: 8pt;
         padding: 2px;
         border-bottom: solid 1px $black;
-        margin: 0px;
+        margin: 0;
       }
 
       &:nth-child(2) {
