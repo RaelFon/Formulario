@@ -1,0 +1,171 @@
+@import "constants", "crf";
+
+h1 {
+  margin-top: 40px;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 11pt;
+}
+
+.company {
+  margin-bottom: 10px;
+  border: solid 1px $black;
+  display: grid;
+  grid-template-columns: 72px 1fr 108px 25%;
+  align-items: center;
+
+  label {
+    padding: 3px 0px 1px 3px;
+
+    &:nth-child(3) {
+      border-left: solid 1px $black;
+    }
+  }
+}
+
+.professional {
+  margin-bottom: 10px;
+
+  div {
+    display: grid;
+    align-items: center;
+
+    span {
+      padding-left: 2px;
+    }
+
+    &:nth-child(1) {
+      grid-template-columns: 36px 1fr 63px 25%;
+    }
+
+    &:nth-child(2) {
+      grid-template-columns: 52px 1fr 20px 10% 40px 30%;
+    }
+
+    &:nth-child(3) {
+      grid-template-columns: 38px 32% 41px 1fr 40px 5% 25px 10%;
+    }
+
+    &:nth-child(4) {
+      grid-template-columns: 32px 20% 23px 20% 40px 1fr;
+      border: none;
+    }
+  }
+}
+
+.declaration {
+  line-height: 15px;
+  margin-bottom: 10px;
+
+  p {
+    text-align-last: justify;
+
+    &:nth-child(3) {
+      text-align-last: initial;
+    }
+  }
+
+  input {
+    width: 70px;
+    border: none;
+    margin-left: 2px;
+    text-decoration: underline;
+    font-size: 8pt;
+  }
+}
+
+.pharmacists-names {
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+
+  table {
+    border-collapse: collapse;
+    text-align: center;
+
+    tr {
+      border: solid 1px $black;
+
+      td {
+        display: grid;
+        grid-template-columns: 16px 1fr;
+        align-items: center;
+
+        &.last {
+          grid-template-columns: 22px 1fr;
+        }
+
+        span {
+          padding-right: 2px;
+        }
+      }
+    }
+  }
+}
+
+.declaration-term {
+  margin-top: 20px;
+
+  p {
+    font-size: 8pt;
+    text-align: justify;
+    line-height: 15px;
+  }
+}
+
+div.date {
+  margin-top: 120px;
+}
+
+.signatures {
+  margin-top: 240px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+
+  .pro-signature {
+    width: 200px;
+    margin-left: 0;
+
+    &:nth-child(2) {
+      margin-right: 50px;
+    }
+
+    p {
+      font-size: 8pt;
+
+      &:nth-child(1) {
+        border-top: solid 2px $black;
+        margin-top: 20px;
+      }
+
+      &:nth-child(2) {
+        margin-top: 42px;
+        padding-top: 2px;
+      }
+    }
+  }
+
+  .docs {
+    width: 220px;
+    border: solid 1px $black;
+
+    p {
+      font-size: 8pt;
+
+      &:nth-child(2) {
+        border-top: solid 2px $black;
+        width: 220px;
+        margin-top: 55px;
+        padding: 2px 0;
+      }
+    }
+  }
+}
