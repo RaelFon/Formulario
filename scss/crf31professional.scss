@@ -1,0 +1,175 @@
+@import "constants", "crf";
+
+header {
+  h1 {
+    font-size: 12pt;
+  }
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+.terms {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 30px 22% 30px 1fr 30px 20% 30px 17%;
+  align-items: center;
+
+  span {
+    padding-left: 2px;
+    font-size: 9pt;
+  }
+}
+
+.company {
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 72px 1fr 108px 25%;
+  align-items: center;
+}
+
+.professional {
+  margin-bottom: 10px;
+
+  div {
+    display: grid;
+    align-items: center;
+
+    span {
+      padding-left: 2px;
+    }
+
+    &:nth-child(1) {
+      grid-template-columns: 36px 1fr 63px 25%;
+    }
+
+    &:nth-child(2) {
+      grid-template-columns: 52px 1fr 20px 10% 40px 30%;
+    }
+
+    &:nth-child(3) {
+      grid-template-columns: 38px 32% 41px 1fr 40px 5% 25px 10%;
+    }
+
+    &:nth-child(4) {
+      grid-template-columns: 32px 20% 23px 20% 40px 1fr;
+    }
+  }
+}
+
+.schedule {
+  margin-top: 10px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+
+  table {
+    margin-top: 10px;
+    tr {
+      td {
+        max-width: 49px;
+      }
+    }
+  }
+}
+
+.scale {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 25% 5% 3% 5% 5%;
+  column-gap: 3%;
+  align-items: center;
+
+  .custom-check {
+    width: 40px;
+  }
+
+  div {
+    border: solid 1px $black;
+    padding: 3px;
+  }
+
+  span {
+    padding: 2px;
+  }
+}
+
+.obs-line {
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  div {
+    display: grid;
+
+    &:nth-child(1) {
+      grid-template-columns: 33px 1fr;
+    }
+
+    &:nth-child(2) {
+      grid-template-columns: 1fr;
+      input {
+        border-left: 1px solid $black;
+      }
+    }
+  }
+}
+
+
+.declaration-text {
+  font-size: 7pt;
+  text-align: justify;
+  line-height: 13px;
+  &.first{
+      margin-top: 50px;
+  }
+}
+
+.signatures {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+
+  .pro-signature {
+    width: 200px;
+    margin-left: 0;
+
+    &:nth-child(2) {
+      margin-right: 50px;
+    }
+
+    p {
+      font-size: 8pt;
+
+      &:nth-child(1) {
+        border-top: solid 2px $black;
+        margin-top: 20px;
+      }
+
+      &:nth-child(2) {
+        margin-top: 42px;
+        padding-top: 2px;
+      }
+    }
+  }
+
+  .docs {
+    width: 220px;
+    border: solid 1px $black;
+
+    p {
+      font-size: 8pt;
+
+      &:nth-child(2) {
+        border-top: solid 2px $black;
+        width: 220px;
+        margin-top: 55px;
+        padding: 2px 0;
+      }
+    }
+  }
+}
