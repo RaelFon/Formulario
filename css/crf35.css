@@ -140,8 +140,8 @@ h2 {
   margin-top: 20px; }
 
 h3 {
-  font-size: 12pt;
   text-align: center;
+  font-size: 12pt;
   margin-top: 3px; }
 
 p.company {
@@ -161,34 +161,29 @@ p.company {
   .company div:nth-child(5) {
     grid-template-columns: 28px 10% 33px 26% 42px 1fr; }
 
-.terminate-declaration {
-  margin-top: 30px; }
-  .terminate-declaration p {
-    font-size: 11pt;
-    line-height: 20px; }
-    .terminate-declaration p:nth-child(1) {
-      font-size: 12pt;
-      font-weight: bolder;
-      margin-bottom: 10px; }
-    .terminate-declaration p:nth-child(7) {
-      font-size: 12pt;
-      margin-bottom: 20px; }
-  .terminate-declaration .check input {
-    border: 1px solid #000; }
-  .terminate-declaration .check div {
-    display: grid;
-    margin-top: 10px;
-    align-items: center; }
-    .terminate-declaration .check div:nth-child(1) {
-      grid-template-columns: 35px 1fr; }
-    .terminate-declaration .check div:nth-child(2) {
-      grid-template-columns: 35px 25% 1fr; }
-    .terminate-declaration .check div:nth-child(3) {
-      grid-template-columns: 35px 1fr; }
-    .terminate-declaration .check div:nth-child(4) {
-      grid-template-columns: 35px 25% 35px 10% 35px 1fr; }
-    .terminate-declaration .check div:nth-child(5) {
-      grid-template-columns: 35px 25% 1fr; }
+p.declaration {
+  margin-top: 30px;
+  font-size: 11pt;
+  line-height: 20px;
+  font-weight: 900; }
+
+.check input {
+  border: 1px solid #000; }
+
+.check div {
+  display: grid;
+  margin-top: 10px;
+  align-items: center; }
+  .check div:nth-child(1) {
+    grid-template-columns: 35px 1fr; }
+  .check div:nth-child(2) {
+    grid-template-columns: 35px 25% 1fr; }
+  .check div:nth-child(3) {
+    grid-template-columns: 35px 1fr; }
+  .check div:nth-child(4) {
+    grid-template-columns: 35px 25% 35px 10% 35px 1fr; }
+  .check div:nth-child(5) {
+    grid-template-columns: 35px 25% 1fr; }
 
 div.date {
   margin-top: 80px; }
@@ -223,17 +218,15 @@ div.date {
       margin-top: 10px; }
   .requirement div {
     margin: 0 auto;
-    width: 85%;
-    border: 1px solid #000;
-    border-top: none;
-    padding: 1px 0;
-    overflow: hidden; }
-    .requirement div.first {
-      margin-top: 10px;
-      border-top: 1px solid #000; }
-    .requirement div input {
+    width: 85%; }
+    .requirement div:first-of-type {
+      margin-top: 10px; }
+    .requirement div:last-of-type input[type="text"] {
+      border-bottom: 1px solid #000; }
+    .requirement div input[type="text"] {
       width: 100%;
-      height: 23px; }
+      height: 28px;
+      border-left: 1px solid #000; }
 
 .legal-representative {
   margin: 0 auto;
@@ -243,8 +236,6 @@ div.date {
   .legal-representative p {
     text-align: center;
     font-size: 10pt; }
-    .legal-representative p:nth-child(1) {
-      margin-top: 1px; }
     .legal-representative p:nth-child(2) {
       border-top: 2px solid #000;
       margin-top: 35px; }
