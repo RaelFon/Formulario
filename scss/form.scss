@@ -81,3 +81,23 @@ input {
     }
   }
 }
+
+.custom-formless {
+
+  strong,
+  span {
+    border-top: 1px solid #b3b3b3;
+    border-left: 1px solid #b3b3b3;
+    font-weight: bolder;
+    padding: 3px 0 3px 2px;
+  }
+
+  div:last-child strong {
+    border-bottom: 1px solid #b3b3b3;
+  }
+
+  input + label,
+  input + strong {
+    border-left: none;
+  }
+}
