@@ -1,0 +1,104 @@
+@import "constants";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 7pt;
+  color: $dark-gray;
+  line-height: 1.4em;
+}
+
+.container {
+  margin: 0 auto;
+  width: 190mm;
+  padding-bottom: 10px;
+
+  > header {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    text-align: center;
+    margin-top: 10px;
+
+    .government-logo {
+      img {
+        height: 57px;
+        width: 57px;
+      }
+
+      p {
+        font-weight: 900;
+
+        &:nth-child(2) {
+          font-size: 10pt;
+        }
+
+        &:nth-child(3) {
+          font-size: 14pt;
+        }
+      }
+    }
+
+    .anvisa-info {
+      p {
+        font-size: 10pt;
+
+        &:nth-child(5) {
+          font-size: 12pt;
+          font-weight: 900;
+        }
+
+        &:nth-child(6) {
+          font-size: 7pt;
+          font-weight: 700;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  section {
+    border: solid 1px $black;
+    margin-top: 10px;
+
+    header {
+      position: relative;
+      background-color: $light-grey;
+      padding: 2px 0 0 10px;
+
+      span{
+        position: absolute;
+        top: 3px;
+        margin-left: 3px;
+      }
+
+      strong {
+        font-size: 9pt;
+      }
+    }
+
+    .line {
+      margin: 5px 10px 0;
+      display: grid;
+
+      input[type="text"] {
+        border: none;
+        display: inline-block;
+        margin-top: 5px;
+        width: 100%;
+        border-bottom: solid 1px $light-grey;
+        text-transform: uppercase;
+        font-size: 8pt;
+        font-weight: bold;
+      }
+
+      input[type="checkbox"] {
+        cursor: pointer;
+      }
+
+      label {
+        font-weight: bold;
+      }
+    }
+  }
+}
